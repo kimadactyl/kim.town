@@ -16,6 +16,7 @@ export default ((opts?: Options) => {
         {/* <p>
           Created with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a>, © {year}
         </p> */}
+        <a rel="me" href="https://social.gfsc.studio/@kim"></a>
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
