@@ -7,7 +7,9 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      "Subscribe with RSS": "/index.xml",
+      "RSS": "/index.xml",
+      "Mastodon": "https://social.gfsc.studio/@kim",
+      "Instagram": "https://www.instagram.com/kimadactyl/"
     },
   }),
 }
