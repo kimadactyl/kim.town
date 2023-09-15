@@ -1,7 +1,7 @@
 ---
 title: BMI
 tags: nrt
-date: date: 2023-09-15
+date: 2023-09-15
 ---
 
 OK, so maybe the last entry [[Artist]] was a little far from a tangible exploration of [[Non-representational technology]]. Let’s try something a bit more direct.
