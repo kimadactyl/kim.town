@@ -1,4 +1,4 @@
-import { joinSegments, pathToRoot } from "../util/path"
+import { FullSlug, _stripSlashes, joinSegments, pathToRoot } from "../util/path"
 import { JSResourceToScriptElement } from "../util/resources"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
