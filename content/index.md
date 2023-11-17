@@ -1,5 +1,6 @@
 ---
 title: Welcome to kim.town
+date: 2023-09-05
 ---
 
 This is the start of a [digital garden](https://maggieappleton.com/garden-history) for Dr Kim Foale (they/she), studio lead at [Geeks for Social Change](https://gfsc.studio).

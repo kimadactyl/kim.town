@@ -1,5 +1,6 @@
 ---
 title: Non-representational Technology
+date: 2023-09-06
 ---
 
 I've been writing about and making technology for a long time and finally arrived at a central concept that anchors my thoughts: **Non-representational technology**.
