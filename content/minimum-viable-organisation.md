@@ -70,7 +70,7 @@ We should make it easier to set up and automate all the following.
 
 ### A minimum viable constitution
 
-**NB: this was written for my primary group, [Geeks for Social Change](https://gfsc.studio), who have a [discord you can join!](http://discord.gfsc.studio).**
+**NB: this was written for my primary group, [Geeks for Social Change](https://gfsc.studio), who have a [discord you can join!](http://discord.gfsc.studio) Aiming to add more examples if there’s interest in this piece.**
 
 An agreed group definition of what the space is for.
 
