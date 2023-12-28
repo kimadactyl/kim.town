@@ -44,7 +44,7 @@ So why do they fail? Some general observation from my time in over a dozen group
 	* If noone has the energy to take minutes, do you really have the energy to run a group?
 * Misunderstanding and misuse of consensus processes
 	* Consensus is a long process that can take weeks or months or even years to establish. A key thing to understand is that consensus is only needed for decisions that affect the **whole group**: usually this is changes in constitution or putting out official publications with the group's name on. This is a tiny percentage of total decisions a group makes!
-	* Bulling or coercing people into accepting decisions they are not happy with -- "groupthink". Consensus is often presented as the only ethical decision making process, or ironically, forced on groups of especially younger activists without their understanding or active consent.
+	* Bullying or coercing people into accepting decisions they are not happy with -- "groupthink". Consensus is often presented as the only ethical decision making process, or ironically, forced on groups of especially younger activists without their understanding or active consent.
 		* The justification for this is often that decisions are seen as taking too long or people reach decision fatigue. If this is the case, then consensus isn't working for you. Ask if really everyone needs to consent, if you can make fewer decisions, or if you can form a sub-group that can get it done without needing full group assent.
 
 ## What a system that works should allow
