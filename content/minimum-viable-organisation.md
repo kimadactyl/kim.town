@@ -6,7 +6,7 @@ date: 2023-12-28
 
 **Please note this is a work in progress!**
 
-Basic principle: **It should be easy (low emotional labour, low technical labour, zero cost) to start a small group of people with shared goals**.
+Basic principle: **It should be easy (low emotional labour, low technical labour, zero cost) to start a project with a small group of people with shared goals**.
 
 The further groups that want to produce things get from this, the more likely they are to fail.
 
