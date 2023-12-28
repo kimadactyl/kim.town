@@ -70,6 +70,8 @@ We should make it easier to set up and automate all the following.
 
 ### A minimum viable constitution
 
+**NB: this was written for my primary group, [Geeks for Social Change](https://gfsc.studio), who have a [discord you can join!](http://discord.gfsc.studio).**
+
 An agreed group definition of what the space is for.
 
 _For example: GFSC is a community, mostly based on Discord, that is there to support people to pursue their own projects in alignment with our values (which are articulated elsewhere)._
