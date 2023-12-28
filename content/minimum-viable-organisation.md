@@ -41,6 +41,7 @@ So why do they fail? Some general observation from my time in over a dozen group
 	* Meetings without minutes are just conversations, and mean you frequently end up revisiting the same topics over and over with seemingly no resolution.
 	* Meetings without action points assigned to individuals are somewhere between podcasts and group therapy. Both totally fine things in their own right.
 	* Meetings that don't review progress on action points are simultaneously saying they don't care about the labour taken on on behalf of the group, and don't care about the worker doing it.
+	* If there are no proper minutes then it’s impossible for people who don’t attend to keep abreast of group decisions and progress.
 	* If noone has the energy to take minutes, do you really have the energy to run a group?
 * Misunderstanding and misuse of consensus processes
 	* Consensus is a long process that can take weeks or months or even years to establish. A key thing to understand is that consensus is only needed for decisions that affect the **whole group**: usually this is changes in constitution or putting out official publications with the group's name on. This is a tiny percentage of total decisions a group makes!
