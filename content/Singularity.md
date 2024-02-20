@@ -1,6 +1,7 @@
 ---
 title: Singularity
 date: 2024-02-20
+tags: nrt
 ---
 
 "The singularity" is a well-worn concept in sci-fi. [Wikipedia introduces the concept as follows](https://en.wikipedia.org/wiki/Technological_singularity):.
@@ -37,7 +38,7 @@ We are currently living in what many institutions are referring to as "[The Poly
 
 This week I was stuck trying to order a repeat prescription between my GP's automated phoneline, the NHS app, my pharmacy's website, and various automated email services. Eventually, of course, the only way to fix it was to talk to a human at my surgery. I think most of us experience things like this multiple times on a weekly basis. Anything we do seems to involve 5 different services, each with their own terms of service, privacy policy and tens or hundreds of subprocessors we click "accept" on because we just need medicine, or food, or access to information.
 
-Each of these pieces individually is a prime target for AI replacement. Each individual cog in the (broken) machine will probably make an easy case for replacing itself with an AI. As long as it can look like it's doing the job, people will continue to be paid maintaining it, and doing whole system reform is a long term and difficult task that no-one has the stomach for. As [Richard Cook's classic piece](https://how.complexsystems.fail/) reminds us, "[catastrophe requires multiple failures – single point failures are not enough.](https://how.complexsystems.fail/#3)" And what describes the current state of the world, the polycrisis, better than catastrophe?
+Each of these pieces individually is a prime target for AI replacement. Each individual cog in the (broken) machine will probably make an easy case for replacing itself with an AI. As long as it can look like it's doing the job, people will continue to be paid maintaining it, and doing whole system reform is a long term and difficult task that no-one has the stomach for. As [Richard Cook's classic piece](https://how.complexsystems.fail/) reminds us, "[catastrophe requires multiple failures – single point failures are not enough".](https://how.complexsystems.fail/#3) And what describes the current state of the world, the polycrisis, better than catastrophe?
 
 ---
 
