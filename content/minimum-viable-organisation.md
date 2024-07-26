@@ -2,6 +2,7 @@
 ---
 title: Minimum Viable Organisations
 date: 2023-12-28
+tags: publication
 ---
 
 **Please note this is a work in progress!**
