@@ -4,6 +4,7 @@ description: 'I discovered Paul Graney at Manchester Histories Festival, learnin
 pubDate: 'Jun 14 2016'
 tags: ['sound', 'academic']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/paul-graney-pioneer-acoustic-ecology/'
 heroImage: '../../assets/images/alliscalm/PaulGraney1.jpg'
 ---
 

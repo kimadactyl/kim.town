@@ -5,6 +5,7 @@ pubDate: 'Oct 15 2014'
 updatedDate: 'Oct 13 2015'
 tags: ['games', 'sound', 'academic']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/art-of-noises/'
 heroImage: '../../assets/images/alliscalm/art-of-noises.jpg'
 ---
 

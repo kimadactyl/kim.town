@@ -4,6 +4,7 @@ description: 'Work For Change is a co-op office complex.'
 pubDate: 'Nov 18 2012'
 tags: ['portfolio', 'web']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/work-for-change/'
 heroImage: '../../assets/images/alliscalm/workforchange.png'
 ---
 

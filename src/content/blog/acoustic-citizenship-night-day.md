@@ -5,6 +5,7 @@ pubDate: 'Jan 18 2014'
 updatedDate: 'Oct 15 2019'
 tags: ['academic', 'sound', 'manchester']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/acoustic-citizenship-night-day/'
 ---
 
 Like many others this week, I was amazed to find out that someone moved in next to an iconic Manchester music venue, and then complained about the noise. What were they thinking?

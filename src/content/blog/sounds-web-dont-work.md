@@ -4,6 +4,7 @@ description: 'Generally speaking, I think the web handles audio very badly.'
 pubDate: 'May 16 2012'
 tags: ['sound', 'web']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/sounds-and-the-web-dont-work/'
 ---
 
 Generally speaking, I think the web handles audio very badly. By comparison, photos and visual data are handled very well, with automatic thumbnails, lightboxes and the light being _de-rigueur_ on the modern web. Think about the amount of ways sites like Facebook and Flickr help people deal with image data in subtle, nuanced ways. Similarly, video is handled fairly well, with embedded video being a natural fit in the same ways images are. For some reason, YouTube playlists seem an easier way to listen to (say) a band than any website I can think of. Why is this?

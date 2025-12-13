@@ -4,6 +4,7 @@ description: 'Dug out some recordings of a noise/experimental night at Ladyfest 
 pubDate: 'Feb 07 2014'
 tags: ['sound', 'portfolio']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/termite-club-ladyfest-leeds/'
 ---
 
 Dug out some recordings of a noise/experimental night at Ladyfest Leeds in 2007, recorded in Holy Trinity Church.

@@ -5,6 +5,7 @@ pubDate: 'Jun 22 2012'
 updatedDate: 'Oct 14 2015'
 tags: ['web', 'technology']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/arborjs-experiments/'
 heroImage: '../../assets/images/alliscalm/vintro-1.png'
 ---
 

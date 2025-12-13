@@ -4,6 +4,7 @@ description: 'There has been an explosion in the use of maps to visualise data, 
 pubDate: 'Jul 06 2015'
 tags: ['web', 'design']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/stop-making-pincushion-maps/'
 heroImage: '../../assets/images/alliscalm/propaganda-maps.jpg'
 ---
 

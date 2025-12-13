@@ -4,6 +4,7 @@ description: 'Dear Friend is a letter-writing project celebrating women in publi
 pubDate: 'Jun 01 2016'
 tags: ['portfolio', 'web']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/dear-friend/'
 heroImage: '../../assets/images/alliscalm/Screenshot-from-2016-06-30-16-46-14.png'
 ---
 

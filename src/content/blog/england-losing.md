@@ -4,6 +4,7 @@ description: 'This World Cup, I''ve been quite surprised to find myself really e
 pubDate: 'Jun 24 2014'
 tags: ['colonialism']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/england-losing/'
 heroImage: '../../assets/images/alliscalm/england-recycling-2.jpg'
 ---
 

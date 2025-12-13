@@ -4,6 +4,7 @@ description: 'This project involved redesigning a website for Embody Move Associ
 pubDate: 'Sep 23 2013'
 tags: ['portfolio', 'web']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/embody-move-association/'
 heroImage: '../../assets/images/alliscalm/embody-move-association-1.png'
 ---
 

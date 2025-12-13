@@ -4,6 +4,7 @@ description: 'NoiseEater is a webapp that automatically identifies wind, distort
 pubDate: 'Jun 30 2015'
 tags: ['portfolio', 'sound', 'web']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/noise-eater/'
 heroImage: '../../assets/images/alliscalm/Screenshot-from-2016-06-30-15-55-46.png'
 ---
 

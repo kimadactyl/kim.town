@@ -4,6 +4,7 @@ description: 'I''ve been pointed by a few people now towards I Side With as a po
 pubDate: 'May 15 2014'
 tags: ['politics']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/dont-trust-i-side-with/'
 ---
 
 I've been pointed by a few people now towards I Side With as a policy guide. This site is extremely poorly sourced, and uses a highly flawed questionnare design. I strongly reccomend against using it.

@@ -4,6 +4,7 @@ description: 'I''ve bounced the ideas in Sounds and the web off a few people now
 pubDate: 'Jun 18 2012'
 tags: ['sound', 'web']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/rethinking-sound-and-the-web-part-2/'
 ---
 
 I've bounced the ideas in Sounds and the web off a few people now and had some very valuable feedback. The more I talk about it the more I'm determined to make this a reality. On re-reading my initial article there's a lot missing - I'll try and embellish this idea and look to making a prototype sooner rather than later.

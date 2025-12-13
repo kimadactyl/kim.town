@@ -4,6 +4,7 @@ description: 'I really hate victory points (VPs) as a game mechanic.'
 pubDate: 'Jul 08 2017'
 tags: ['games', 'academic']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/victory-points-suck/'
 heroImage: '../../assets/images/alliscalm/pax-1.jpg'
 ---
 

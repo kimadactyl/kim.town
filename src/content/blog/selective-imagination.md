@@ -4,6 +4,7 @@ description: 'For me, one of the most frustrating things about any kind of vague
 pubDate: 'Jun 30 2014'
 tags: ['games', 'culture']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/selective-imagination/'
 heroImage: '../../assets/images/alliscalm/netrunner-magewars.png'
 ---
 

@@ -4,6 +4,7 @@ description: 'Kate has published a gardening column for a number of years, and h
 pubDate: 'Nov 18 2012'
 tags: ['portfolio', 'web']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/kates-cuttings/'
 heroImage: '../../assets/images/alliscalm/kates-cuttings.png'
 ---
 

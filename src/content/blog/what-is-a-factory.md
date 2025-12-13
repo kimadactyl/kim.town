@@ -4,6 +4,7 @@ description: 'Most obviously, a factory is a place: a building where products ar
 pubDate: 'Jan 02 2016'
 tags: ['academic', 'technology']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/what-is-a-factory/'
 heroImage: '../../assets/images/alliscalm/Eniac.jpg'
 ---
 

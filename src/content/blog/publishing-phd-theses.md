@@ -4,6 +4,7 @@ description: 'PhDs take years, are an "original contribution to knowledge", and 
 pubDate: 'Jun 12 2014'
 tags: ['academic']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/publishing-phd-theses/'
 ---
 
 PhDs take years, are an "original contribution to knowledge", and are generally paid for by the taxpayer. They are then generally read by a handful of people -- generally a supervisor or two, and your examiners -- and then left to rot as a PDF on a university document repository of some kind.

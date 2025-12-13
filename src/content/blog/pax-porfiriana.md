@@ -4,6 +4,7 @@ description: 'Civilization was one of the first computer games I really learnt a
 pubDate: 'May 25 2015'
 tags: ['games', 'academic']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/pax-porfiriana/'
 heroImage: '../../assets/images/alliscalm/civ.png'
 ---
 

@@ -4,6 +4,7 @@ description: 'Sound creation and auditory perception are deeply intertwined with
 pubDate: 'Aug 27 2014'
 tags: ['sound', 'gender', 'academic']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/pass-sing/'
 heroImage: '../../assets/images/alliscalm/plato-1.jpg'
 ---
 

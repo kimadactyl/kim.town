@@ -4,6 +4,7 @@ description: 'As Communications Director for the First National Festival of LGBT
 pubDate: 'Mar 01 2015'
 tags: ['portfolio', 'web']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/first-national-festival-of-lgbt-history/'
 heroImage: '../../assets/images/alliscalm/Screenshot-from-2016-06-30-15-42-48.png'
 ---
 

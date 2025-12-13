@@ -4,6 +4,7 @@ description: 'Beta website for my own business, Tai Chi School, offering online 
 pubDate: 'Apr 11 2016'
 tags: ['portfolio', 'web']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/tai-chi-school/'
 heroImage: '../../assets/images/alliscalm/Screenshot-from-2016-06-30-14-27-09.png'
 ---
 

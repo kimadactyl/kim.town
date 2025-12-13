@@ -4,6 +4,7 @@ description: 'How can very large collections of audio data be quickly and easily
 pubDate: 'Sep 23 2013'
 tags: ['sound', 'web', 'datavis']
 source: 'alliscalm'
+sourceUrl: 'https://alliscalm.net/sound-and-the-web-3/'
 heroImage: '../../assets/images/alliscalm/labs-map-draft.png'
 ---
 

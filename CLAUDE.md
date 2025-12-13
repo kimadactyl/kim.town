@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - Never summarize content for me. Always provide full, complete information.
 - When importing posts, ensure every post has images (heroImage in frontmatter) and double-check that all content has been properly ported over from the original source.
+- Don't prompt me to approve commands unless I specifically ask you
+- Store original URLs in article frontmatter and prompt me if you get 404s
 
 ## Project Overview
 
@@ -57,4 +59,3 @@ Dark/light mode via CSS variables and localStorage. Theme colors defined in `src
 ## Migration Status
 
 Migration complete. See `MIGRATION_LOG.md` for details.
-- Don't prompt me to approve commands unless I specifically ask you
