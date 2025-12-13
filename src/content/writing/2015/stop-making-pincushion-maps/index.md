@@ -2,7 +2,7 @@
 title: 'Stop Making Pincushion Maps!'
 description: 'There has been an explosion in the use of maps to visualise data, prompted by the rise of the "data scientist".'
 pubDate: 'Jul 06 2015'
-tags: ['web', 'design', 'datavis']
+tags: ['data-visualization', 'mapping', 'qualitative-research', 'critique']
 source: 'cassowary'
 sourceUrl: 'https://cassowaryproject.org/visualising-qualitative-data-on-maps/'
 heroImage: './images/propaganda-maps.jpg'

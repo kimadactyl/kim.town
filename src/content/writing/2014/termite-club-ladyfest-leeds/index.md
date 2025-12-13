@@ -2,7 +2,7 @@
 title: 'Recordings from The Termite Club at Ladyfest Leeds 2007'
 description: 'Dug out some recordings of a noise/experimental night at Ladyfest Leeds in 2007, recorded in Holy Trinity Church.'
 pubDate: 'Feb 07 2014'
-tags: ['sound', 'portfolio']
+tags: ['experimental-music', 'ladyfest', 'live-recording', 'bandcamp']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/termite-club-ladyfest-leeds/'
 ---

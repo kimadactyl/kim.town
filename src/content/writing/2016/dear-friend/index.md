@@ -2,7 +2,7 @@
 title: 'Dear Friend'
 description: 'Dear Friend is a letter-writing project celebrating women in public life and struggles for liberation.'
 pubDate: 'Jun 01 2016'
-tags: ['portfolio', 'web']
+tags: ['letter-writing', 'womens-history', 'cassowary-project', 'community-archives']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/dear-friend/'
 heroImage: './images/Screenshot-from-2016-06-30-16-46-14.png'

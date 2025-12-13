@@ -2,7 +2,7 @@
 title: 'Artist'
 description: "I've always had a complicated relationship with art. More specifically, I've always had a complicated relationship with knowing if what I make is art or not."
 pubDate: 'Dec 15 2023'
-tags: ["identity", "art"]
+tags: ['identity', 'art-practice', 'self-reflection']
 source: 'kimtown'
 ---
 

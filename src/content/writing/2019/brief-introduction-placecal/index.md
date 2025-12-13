@@ -2,7 +2,7 @@
 title: 'A Brief Introduction to PlaceCal'
 description: "PlaceCal is a package of calendar software, education and community development. It makes it easier for residents to publish events, find information about their area, and see how to get involved in local groups."
 pubDate: 'May 08 2019'
-tags: ['tech', 'community', 'placecal']
+tags: ['placecal', 'community-calendars', 'social-isolation', 'age-friendly']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2019/brief-introduction-placecal/'
 ---

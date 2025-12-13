@@ -2,7 +2,7 @@
 title: 'Singularity'
 description: '"The singularity" is a well-worn concept in sci-fi. What if the really scary thing isn''t an AI that takes over everything, but rather one that is exactly stupid enough it can happily take over the boring office jobs for the rest of time?'
 pubDate: 'Mar 01 2024'
-tags: ["tech", "ai", "future"]
+tags: ['ai', 'automation', 'future-of-work', 'critique']
 source: 'kimtown'
 ---
 

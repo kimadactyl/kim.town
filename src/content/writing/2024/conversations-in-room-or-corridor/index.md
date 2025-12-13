@@ -2,7 +2,7 @@
 title: 'Conversations in Room or Corridor'
 description: "Something I've noticed a lot recently when thinking about what events I want to go to is if I think the reason for going is the event itself, or the people who are at the event."
 pubDate: 'Feb 15 2024'
-tags: ["organisation", "communication"]
+tags: ['conferences', 'networking', 'events', 'social-dynamics']
 source: 'kimtown'
 ---
 

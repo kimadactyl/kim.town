@@ -2,7 +2,7 @@
 title: '"To all Whom These Presents Shall Come Greeting:" Transcribing a Royal Charter'
 description: 'What does a huge certificate from 1855 have to do with the history of Hulme? This is the Manchester and Salford Baths and Laundries Company''s Royal Charter.'
 pubDate: 'Aug 18 2015'
-tags: ['history', 'manchester', 'academic']
+tags: ['local-history', 'manchester', 'baths-history', 'transcription', 'archives']
 source: 'cassowary'
 sourceUrl: 'https://cassowaryproject.org/to-all-whom-these-presents-shall-come-greeting-transcribing-a-royal-charter/'
 heroImage: './images/charter-cover.png'

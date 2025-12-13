@@ -2,7 +2,7 @@
 title: 'PlaceCal: The Story So Far'
 description: "Looking back on how PlaceCal came to be. How do we help local communities publish their events collectively?"
 pubDate: 'Jan 30 2018'
-tags: ['tech', 'community', 'placecal']
+tags: ['placecal', 'age-friendly', 'hulme', 'community-calendars', 'digital-inclusion']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2018/placecal-story-so-far/'
 ---

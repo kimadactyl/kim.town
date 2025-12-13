@@ -2,7 +2,7 @@
 title: 'Minimum Viable Organisations'
 description: 'It should be easy (low emotional labour, low technical labour, zero cost) to start a project with a small group of people with shared goals.'
 pubDate: 'Dec 28 2023'
-tags: ["organisation", "publication"]
+tags: ['organizing-tools', 'co-ops', 'governance', 'work-in-progress']
 source: 'kimtown'
 ---
 

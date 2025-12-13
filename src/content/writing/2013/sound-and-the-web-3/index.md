@@ -2,7 +2,7 @@
 title: 'Rethinking Sound and the Web: Part 3'
 description: 'How can very large collections of audio data be quickly and easily searched and catalogued?'
 pubDate: 'Sep 23 2013'
-tags: ['sound', 'web', 'datavis']
+tags: ['audio-visualization', 'british-library', 'metadata', 'research-proposal']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/sound-and-the-web-3/'
 ---

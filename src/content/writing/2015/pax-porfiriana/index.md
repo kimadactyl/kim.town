@@ -2,7 +2,7 @@
 title: 'From Civilisation to Pax Porfiriana: how I learned to stop worrying and accept colonialism'
 description: 'Civilization was one of the first computer games I really learnt anything from.'
 pubDate: 'May 25 2015'
-tags: ['games', 'academic']
+tags: ['board-games', 'colonialism', 'game-design', 'civilization', 'critique']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/pax-porfiriana/'
 heroImage: './images/civ.png'

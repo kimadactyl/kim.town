@@ -2,7 +2,7 @@
 title: 'First National Festival of LGBT History'
 description: 'As Communications Director for the First National Festival of LGBT History, I built the website and authored all copy and communications.'
 pubDate: 'Mar 01 2015'
-tags: ['portfolio', 'web']
+tags: ['lgbt-history', 'events', 'middleman', 'client-work', 'volunteering']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/first-national-festival-of-lgbt-history/'
 heroImage: './images/Screenshot-from-2016-06-30-15-42-48.png'

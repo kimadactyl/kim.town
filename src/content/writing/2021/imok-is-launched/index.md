@@ -2,7 +2,7 @@
 title: 'imok is launched!'
 description: "We've been working on imok for a while, and are glad it's now ready for public use. It's a simple bot designed to support people undertaking potentially risky activities."
 pubDate: 'Feb 16 2021'
-tags: ['tech', 'activism', 'safety']
+tags: ['asylum-seekers', 'safety-app', 'hostile-environment', 'open-source']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2021/imok-is-launched/'
 ---

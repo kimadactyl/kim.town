@@ -2,7 +2,7 @@
 title: 'Why I love watching England lose'
 description: 'This World Cup, I''ve been quite surprised to find myself really enjoying the football -- but only when England lose. Why is this?'
 pubDate: 'Jun 24 2014'
-tags: ['colonialism']
+tags: ['nationalism', 'colonialism', 'football', 'english-identity']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/england-losing/'
 ---

@@ -2,7 +2,7 @@
 title: 'Understanding modern Manchester through baths and wash-houses in the 19th century'
 description: 'What can we learn from the baths and wash-houses of the time? This one small aspect of life in Manchester in the 1840s gives a crucial insight into people''s lives and experiences.'
 pubDate: 'Jul 17 2016'
-tags: ['history', 'manchester', 'academic']
+tags: ['baths-history', 'manchester', 'victorian', 'social-history', 'hulme']
 source: 'cassowary'
 sourceUrl: 'https://cassowaryproject.org/understanding-modern-manchester-through-baths-and-wash-houses/'
 heroImage: './images/leaf-st-exterior.jpg'

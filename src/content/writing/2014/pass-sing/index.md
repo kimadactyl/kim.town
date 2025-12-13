@@ -2,7 +2,7 @@
 title: 'Pass-SING: gender, sound, power and patriarchy'
 description: 'Sound creation and auditory perception are deeply intertwined with social hierarchies.'
 pubDate: 'Aug 27 2014'
-tags: ['sound', 'gender', 'academic']
+tags: ['gender', 'sound-studies', 'voice', 'patriarchy', 'philosophy']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/pass-sing/'
 heroImage: './images/plato-1.jpg'

@@ -2,7 +2,7 @@
 title: 'Living in the ruins: my experience of New New Hulme'
 description: 'The poplar trees in Hulme Park were planted to beautify the area surrounding the Hulme Crescents. Historical aerial photos reveal these sturdy trees remained constant even as everything around them transformed dramatically.'
 pubDate: 'Jun 13 2015'
-tags: ['history', 'manchester', 'hulme']
+tags: ['hulme', 'manchester', 'urban-regeneration', 'personal', 'housing']
 source: 'cassowary'
 sourceUrl: 'https://cassowaryproject.org/living-in-the-ruins/'
 heroImage: './images/header.jpg'

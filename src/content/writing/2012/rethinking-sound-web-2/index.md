@@ -2,7 +2,7 @@
 title: 'Rethinking Sound and the Web: Part 2'
 description: 'I''ve bounced the ideas in Sounds and the web off a few people now and had some very valuable feedback.'
 pubDate: 'Jun 18 2012'
-tags: ['sound', 'web']
+tags: ['audio-visualization', 'ux-design', 'metadata']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/rethinking-sound-and-the-web-part-2/'
 ---

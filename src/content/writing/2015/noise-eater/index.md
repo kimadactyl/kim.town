@@ -2,7 +2,7 @@
 title: 'Noise Eater'
 description: 'NoiseEater is a webapp that automatically identifies wind, distortion, and microphone handling noise in your audio file.'
 pubDate: 'Jun 30 2015'
-tags: ['portfolio', 'sound', 'web']
+tags: ['audio-analysis', 'web-app', 'ruby', 'salford-university', 'client-work']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/noise-eater/'
 heroImage: './images/Screenshot-from-2016-06-30-15-55-46.png'

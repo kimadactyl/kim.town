@@ -2,7 +2,7 @@
 title: 'Agriculture: Soundscape Recordings from 2007'
 description: 'These are some field recordings I made in 2007 as part of my BA(Hons) dissertation.'
 pubDate: 'Oct 22 2012'
-tags: ['sound', 'portfolio']
+tags: ['field-recording', 'soundscape', 'bandcamp']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/agriculture-soundscape-recordings-from-2007/'
 ---
