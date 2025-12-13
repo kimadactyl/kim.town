@@ -3,7 +3,7 @@ import path from 'node:path'
 import matter from 'gray-matter'
 
 const JSON_FOLDER = './.json'
-const BLOG_FOLDER = 'src/content/blog'
+const BLOG_FOLDER = 'src/content/writing'
 
 // Get data from markdown files
 const getData = (folder) => {
@@ -21,9 +21,9 @@ const getData = (folder) => {
 			// Skip drafts
 			if (data.draft) return []
 
-			// Build slug from path structure: src/content/blog/YEAR/slug/index.md -> blog/YEAR/slug
+			// Build slug from path structure: src/content/writing/YEAR/slug/index.md -> writing/YEAR/slug
 			const pathParts = filepath.split(path.sep)
-			const blogIndex = pathParts.indexOf('blog')
+			const blogIndex = pathParts.indexOf('writing')
 			const slugParts = pathParts.slice(blogIndex)
 
 			// Remove file extension and handle index files

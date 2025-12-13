@@ -5,7 +5,7 @@ import { Icon } from "astro-icon/components";
 import BlogCard from "../components/BlogCard.astro";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("blog"))
+const posts = (await getCollection("writing"))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 6);
 ---
@@ -42,7 +42,7 @@ const posts = (await getCollection("blog"))
     <div class="posts-grid-container">
       {posts.map((post) => <BlogCard post={post} />)}
     </div>
-    <a class="btn-secondary" href={`${SITE_BASE}/blog`}
+    <a class="btn-secondary" href={`${SITE_BASE}/writing`}
       >Read All
       <Icon size={20} name="mdi:arrow-right" />
     </a>
