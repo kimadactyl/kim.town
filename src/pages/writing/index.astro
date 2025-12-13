@@ -37,6 +37,7 @@ const tagCounts = posts.reduce(
 const tags = Object.entries(tagCounts)
 	.map(([name, count]) => ({ name, count }))
 	.sort((a, b) => b.count - a.count)
+	.slice(0, 30)
 ---
 
 <BaseLayout>
