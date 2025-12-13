@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Guidelines
 
 - Never summarize content for me. Always provide full, complete information.
+- When importing posts, ensure every post has images (heroImage in frontmatter) and double-check that all content has been properly ported over from the original source.
 
 ## Project Overview
 
