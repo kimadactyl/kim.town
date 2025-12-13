@@ -1,6 +1,6 @@
 ---
 title: 'Have you noticed how our lives feel louder and lonelier every year?'
-description: "Reflections on how technology has shaped our social connections, and what we can do to build more meaningful community ties."
+description: "Technology, on the whole, promises to make our lives happier, better and more connected. But if you look around, it feels like a lot of technology actually delivers exhaustion, isolation and a feeling of being spied on."
 pubDate: 'Sep 24 2025'
 tags: ['tech', 'community', 'social']
 source: 'gfsc-community'

@@ -1,6 +1,6 @@
 ---
 title: 'Trans Digital Archiving with Dr Zoyander Street'
-description: "A conversation about trans digital archiving, preservation of community histories, and the importance of documenting trans experiences."
+description: "\"I'm so excited that you reached out! I love your work and it means a lot that this project connects with your practice and your communities.\""
 pubDate: 'Nov 07 2025'
 tags: ['trans', 'archiving', 'community']
 source: 'gfsc-community'

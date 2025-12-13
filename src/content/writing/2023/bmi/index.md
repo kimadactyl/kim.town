@@ -1,6 +1,6 @@
 ---
 title: 'BMI'
-description: 'A critical look at the Body Mass Index and its limitations as a health metric.'
+description: 'BMI, or "body mass index", is a very old — and famously completely fucked — health metric.'
 pubDate: 'Aug 15 2023'
 tags: ["health", "science"]
 source: 'kimtown'

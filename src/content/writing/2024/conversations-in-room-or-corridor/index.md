@@ -1,6 +1,6 @@
 ---
 title: 'Conversations in Room or Corridor'
-description: 'Reflections on the different dynamics of formal meetings versus informal hallway conversations.'
+description: "Something I've noticed a lot recently when thinking about what events I want to go to is if I think the reason for going is the event itself, or the people who are at the event."
 pubDate: 'Feb 15 2024'
 tags: ["organisation", "communication"]
 source: 'kimtown'

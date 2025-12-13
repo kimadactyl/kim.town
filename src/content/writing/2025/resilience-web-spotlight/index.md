@@ -1,6 +1,6 @@
 ---
 title: 'Resilience Web: Community Spotlight'
-description: "Spotlight on Resilience Web, a platform helping communities map and connect their local sustainability and resilience initiatives."
+description: "It's a platform that maps community, social justice and environmental groups in a local area. These maps are created and maintained by the people who live there."
 pubDate: 'Sep 19 2025'
 tags: ['tech', 'community', 'spotlight']
 source: 'gfsc-community'

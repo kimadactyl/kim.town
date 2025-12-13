@@ -1,6 +1,6 @@
 ---
 title: 'Karrot: Community Spotlight'
-description: "Spotlight on Karrot, a tool for grassroots initiatives to coordinate and communicate, built by and for communities."
+description: "We emerged out of a dream to build a digital sharing platform for the world, building off the back of the success a great foodsharing platform for German-speaking regions."
 pubDate: 'Oct 17 2025'
 tags: ['tech', 'community', 'spotlight']
 source: 'gfsc-community'

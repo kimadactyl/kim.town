@@ -1,6 +1,6 @@
 ---
 title: 'Artist'
-description: 'An exploration of what it means to be an artist and the various forms artistic expression can take.'
+description: "I've always had a complicated relationship with art. More specifically, I've always had a complicated relationship with knowing if what I make is art or not."
 pubDate: 'Dec 15 2023'
 tags: ["identity", "art"]
 source: 'kimtown'

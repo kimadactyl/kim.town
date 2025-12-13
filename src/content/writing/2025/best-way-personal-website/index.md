@@ -1,6 +1,6 @@
 ---
 title: "What's the best way to make my personal website?"
-description: "A practical guide to creating your own personal website, exploring different approaches from simple to complex."
+description: "The question we get the most on the Discord is simply 'how do I get started with a web presence?' As you might expect, there are a plethora of options out there today."
 pubDate: 'Sep 11 2025'
 tags: ['tech', 'web', 'guide']
 source: 'gfsc-community'
