@@ -25,48 +25,78 @@ const externalDomain = isExternal ? getDomain(post.data.externalUrl) : ''
 	target={isExternal ? '_blank' : undefined}
 	rel={isExternal ? 'noopener noreferrer' : undefined}
 	class:list={[
-		"flex flex-col gap-4 pb-8 h-full group transition-colors relative",
-		isExternal && "external-post"
+		"blog-card flex flex-col gap-4 pb-8 h-full group transition-all relative",
+		isExternal && "blog-card--external"
 	]}
 >
-	{/* External link badge */}
-	{isExternal && (
-		<div class="absolute top-3 right-3 z-10 bg-foreground/90 dark:bg-foreground-dark/90 text-background dark:text-background-dark px-2 py-1 rounded-md text-xs font-medium flex items-center gap-1 shadow-md">
-			<Icon name="mdi:open-in-new" class="w-3.5 h-3.5" />
-			<span>External</span>
-		</div>
-	)}
-
 	{
 		post.data.heroImage && (
 			<div class="relative overflow-hidden rounded-xl">
 				<Image
 					src={post.data.heroImage}
 					alt={post.data.title}
-					class="object-cover aspect-video w-full"
+					class="object-cover aspect-video w-full transition-transform duration-500 group-hover:scale-105"
 				/>
 			</div>
 		)
 	}
+
+	{/* External post indicator - subtle top accent bar */}
+	{isExternal && (
+		<div class="external-indicator flex items-center gap-2 text-xs font-medium tracking-wide uppercase text-primary dark:text-primary-dark">
+			<span class="inline-block w-8 h-px bg-current"></span>
+			<span class="flex items-center gap-1.5">
+				<Icon name="mdi:arrow-top-right" class="w-3.5 h-3.5" />
+				{externalDomain}
+			</span>
+		</div>
+	)}
+
 	<h4
-		class="text-2xl font-semibold group-hover:text-primary dark:group-hover:text-primary-dark group-hover:underline transition-colors flex items-start gap-2"
+		class="text-2xl font-semibold group-hover:text-primary dark:group-hover:text-primary-dark transition-colors leading-snug"
 	>
-		<span>{post.data.title}</span>
-		{isExternal && (
-			<Icon name="mdi:open-in-new" class="w-5 h-5 flex-shrink-0 mt-1 opacity-60" />
-		)}
+		{post.data.title}
 	</h4>
-	<p class="line-clamp-3 opacity-80">
+
+	<p class="line-clamp-3 opacity-75 leading-relaxed">
 		{post.data.description}
 	</p>
-	<div class="flex items-center gap-3 mt-auto">
-		<p class="uppercase text-sm tracking-tight">
+
+	<div class="flex items-center gap-3 mt-auto pt-2 border-t border-foreground/10 dark:border-foreground-dark/10">
+		<p class="uppercase text-xs tracking-wider opacity-60">
 			<FormattedDate date={post.data.pubDate} />
 		</p>
-		{isExternal && externalDomain && (
-			<span class="text-xs px-2 py-0.5 rounded-full bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark font-medium">
-				{externalDomain}
+		{isExternal && (
+			<span class="ml-auto text-xs opacity-50 flex items-center gap-1">
+				Opens externally
+				<Icon name="mdi:open-in-new" class="w-3 h-3" />
 			</span>
 		)}
 	</div>
 </a>
+
+<style>
+	.blog-card--external {
+		border-left: 2px solid color-mix(in srgb, var(--color-primary) 40%, transparent);
+		padding-left: 1rem;
+	}
+
+	:global(.dark) .blog-card--external {
+		border-left-color: color-mix(in srgb, var(--color-primary-dark) 40%, transparent);
+	}
+
+	.external-indicator {
+		animation: fadeSlideIn 0.3s ease-out;
+	}
+
+	@keyframes fadeSlideIn {
+		from {
+			opacity: 0;
+			transform: translateX(-8px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+</style>

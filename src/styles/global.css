@@ -46,7 +46,7 @@ html {
 }
 
 .posts-grid-container {
-	@apply grid my-6 md:grid-cols-2 xl:grid-cols-4 gap-6;
+	@apply grid my-12 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14;
 }
 
 /* Post content */
