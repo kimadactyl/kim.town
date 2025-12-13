@@ -2,13 +2,13 @@
 title: 'Stop Making Pincushion Maps!'
 description: 'There has been an explosion in the use of maps to visualise data, prompted by the rise of the "data scientist".'
 pubDate: 'Jul 06 2015'
-tags: ['web', 'design']
-source: 'alliscalm'
-sourceUrl: 'https://alliscalm.net/stop-making-pincushion-maps/'
+tags: ['web', 'design', 'datavis']
+source: 'cassowary'
+sourceUrl: 'https://cassowaryproject.org/visualising-qualitative-data-on-maps/'
 heroImage: './images/propaganda-maps.jpg'
 ---
 
-*Originally posted at The Cassowary Project.*
+*This post was originally published as part of [The Cassowary Project](https://cassowaryproject.org/), a DIY local history research project by Sylvia Kölling and Kim Foale.*
 
 There has been an explosion in the use of maps to visualise data, prompted by the rise of the "data scientist", available open data, and a wealth of new tech tools. Authors like Tufte a Few have created ground rules and beautiful examples of what's possible with data visualisation, from the minimalist to the maximalist. With access to big data sets and a basic grounding in statistics, it's possible to make all kinds of quantitative data visualisations using tools from R (a DSL for data manipulation) to Tableux (freemium data visualisation software).
 

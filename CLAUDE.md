@@ -8,6 +8,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - When importing posts, ensure every post has images (heroImage in frontmatter) and double-check that all content has been properly ported over from the original source.
 - Don't prompt me to approve commands unless I specifically ask you
 - Store original URLs in article frontmatter and prompt me if you get 404s
+- Store posts in folders by year
+- Store images in a folder in the post directory
 
 ## Project Overview
 
