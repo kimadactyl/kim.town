@@ -57,3 +57,4 @@ Dark/light mode via CSS variables and localStorage. Theme colors defined in `src
 ## Migration Status
 
 Migration complete. See `MIGRATION_LOG.md` for details.
+- Don't prompt me to approve commands unless I specifically ask you

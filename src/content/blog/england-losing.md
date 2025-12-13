@@ -4,6 +4,7 @@ description: 'This World Cup, I''ve been quite surprised to find myself really e
 pubDate: 'Jun 24 2014'
 tags: ['colonialism']
 source: 'alliscalm'
+heroImage: '../../assets/images/alliscalm/england-recycling-2.jpg'
 ---
 
 This World Cup, I've been quite surprised to find myself really enjoying the football -- but only when England _lose_. Why is this? What about my native country losing fills me with such schadenfreude?

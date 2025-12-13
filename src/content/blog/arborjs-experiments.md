@@ -5,6 +5,7 @@ pubDate: 'Jun 22 2012'
 updatedDate: 'Oct 14 2015'
 tags: ['web', 'technology']
 source: 'alliscalm'
+heroImage: '../../assets/images/alliscalm/vintro-1.png'
 ---
 
 I'm the first to admit I'm pretty horrible at elegant coding nowadays. When I was younger I used to have all the code skillz and none of the ideas - now it's totally the other way around, a direction I'm pretty happy about! In order to try and rectify this I've been playing with a few JavaScript libraries recently when it's come up for various projects.

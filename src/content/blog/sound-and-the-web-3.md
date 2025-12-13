@@ -4,6 +4,7 @@ description: 'How can very large collections of audio data be quickly and easily
 pubDate: 'Sep 23 2013'
 tags: ['sound', 'web', 'datavis']
 source: 'alliscalm'
+heroImage: '../../assets/images/alliscalm/labs-map-draft.png'
 ---
 
 This idea which I've blogged about previously was worked into a bid for a British Library Labs competition. My submission was unsuccessful but here's where I'm up to for another date. This article is therefore a "how it would be done" proposal.
