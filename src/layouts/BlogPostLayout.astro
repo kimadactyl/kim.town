@@ -24,9 +24,11 @@ const {
 	headings,
 	slug,
 	remarkPluginFrontmatter,
+	source,
 } = Astro.props
 
 import BaseLayout from './BaseLayout.astro'
+import CassowaryCredit from '../components/CassowaryCredit.astro'
 import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
 
@@ -101,6 +103,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 							)
 						}
 					</div>
+					{source === 'cassowary' && <CassowaryCredit />}
 					<div
 						class="prose prose-neutral prose-lg md:prose-xl dark:prose-invert prose-img:rounded-xl prose-figure:text-center prose-img:mx-auto"
 					>

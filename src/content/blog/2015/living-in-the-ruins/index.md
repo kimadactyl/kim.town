@@ -8,8 +8,6 @@ sourceUrl: 'https://cassowaryproject.org/living-in-the-ruins/'
 heroImage: './images/header.jpg'
 ---
 
-*This post was originally published as part of [The Cassowary Project](https://cassowaryproject.org/), a DIY local history research project by Sylvia Kölling and Kim Foale.*
-
 The poplar trees in Hulme Park were planted to beautify the area surrounding the Hulme Crescents. Historical aerial photos reveal these sturdy trees remained constant even as everything around them transformed dramatically. The photograph below shows the same location as it appeared in 1997, shortly after the Crescents' demolition.
 
 ![Hulme Park in 1997](./images/hulme-park-1997.jpg)

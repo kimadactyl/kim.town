@@ -8,8 +8,6 @@ sourceUrl: 'https://cassowaryproject.org/understanding-modern-manchester-through
 heroImage: './images/leaf-st-exterior.jpg'
 ---
 
-*This post was originally published as part of [The Cassowary Project](https://cassowaryproject.org/), a DIY local history research project by Sylvia Kölling and Kim Foale.*
-
 Manchester's pivotal role in the industrial revolution has been written about extensively -- what can we possibly learn from the baths and wash-houses of the time that we don't know already? In this article, I propose that this one small aspect of life in Manchester in the 1840s gives a crucial insight into people's lives and experiences, and the beginning of Manchester's perception of itself as a modern city. People needed to wash and bathe and clean their clothes, and it was much harder to do so before public baths were established. Even after the establishment of the Manchester and Salford Baths and Laundries Company, it was a luxury that few could afford.
 
 I have been researching Manchester's public baths since before the Hulme History Project, and became fascinated with Leaf Street Baths and Wash-houses. This gigantic municipal baths was round the corner from my house, and now there is almost no trace of either its existence or impact on the community -- the site was a park, and is currently being redeveloped into flats.

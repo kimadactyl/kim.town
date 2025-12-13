@@ -8,8 +8,6 @@ sourceUrl: 'https://cassowaryproject.org/visualising-qualitative-data-on-maps/'
 heroImage: './images/propaganda-maps.jpg'
 ---
 
-*This post was originally published as part of [The Cassowary Project](https://cassowaryproject.org/), a DIY local history research project by Sylvia Kölling and Kim Foale.*
-
 There has been an explosion in the use of maps to visualise data, prompted by the rise of the "data scientist", available open data, and a wealth of new tech tools. Authors like Tufte a Few have created ground rules and beautiful examples of what's possible with data visualisation, from the minimalist to the maximalist. With access to big data sets and a basic grounding in statistics, it's possible to make all kinds of quantitative data visualisations using tools from R (a DSL for data manipulation) to Tableux (freemium data visualisation software).
 
 What though of qualitative data visualisation? How can we visualise cultural changes, geographical changes, or the movement of communities? There is no shortage of inspiration for mapping say, population density, crime or employment rate, or anything that makes a neat quantifiable percentage; even if the underlying statistic is in itself flawed, it still makes a pretty map. Visualising good qualitative research in interesting, interactive ways still feels under-explored.

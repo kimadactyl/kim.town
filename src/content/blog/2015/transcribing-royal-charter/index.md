@@ -8,8 +8,6 @@ sourceUrl: 'https://cassowaryproject.org/to-all-whom-these-presents-shall-come-g
 heroImage: './images/charter-cover.png'
 ---
 
-*This post was originally published as part of [The Cassowary Project](https://cassowaryproject.org/), a DIY local history research project by Sylvia Kölling and Kim Foale.*
-
 A week's gone by and I'm wondering why I've spent it transcribing an enormous legal document from 1855. What does a huge certificate from 1855 have to do with the history of Hulme?
 
 This is Manchester and Salford Baths and Laundries Company's Royal Charter.
