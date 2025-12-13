@@ -1,13 +1,11 @@
 ---
-title: 'Goodhart''s Law'
-description: '"When a measure becomes a target, it ceases to be a good measure."'
-pubDate: 'Sep 22 2023'
-tags: ['concepts', 'nrt']
+title: "Goodhart's Law"
+description: 'When a measure becomes a target, it ceases to be a good measure.'
+pubDate: 'Apr 01 2023'
+tags: ["organisation", "metrics"]
 source: 'kimtown'
 ---
 
-"When a measure becomes a target, it ceases to be a good measure."
+[Goodhart’s Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) states that "When a measure becomes a target, it ceases to be a good measure”. This is a really common method used to make any manner of social and technical phenomena countable, which eventually inevitably has the effect of allowing it to be institutionalised.
 
-This principle describes how metrics intended to quantify social and technical phenomena often become targets for optimization, ultimately enabling institutional adoption of these measures.
-
-BMI and Community are both concrete examples of this.
+[[BMI]] is an example of this, as is the box-ticking done when quantifying [[Community]].
