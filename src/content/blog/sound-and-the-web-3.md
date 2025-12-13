@@ -5,7 +5,6 @@ pubDate: 'Sep 23 2013'
 tags: ['sound', 'web', 'datavis']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/sound-and-the-web-3/'
-heroImage: '../../assets/images/alliscalm/labs-map-draft.png'
 ---
 
 This idea which I've blogged about previously was worked into a bid for a British Library Labs competition. My submission was unsuccessful but here's where I'm up to for another date. This article is therefore a "how it would be done" proposal.
@@ -46,6 +45,8 @@ Here are some examples of how I would process British Library content, with some
 ## "Soundscapes" collection
 
 There is already a map of soundscape recordings, and a separate XML database on the British Library website. However, reading the descriptions of each sound or seeing where they are located on the map gives little useful information about the data set as a whole. A useful visualisation here would be to directly superimpose sound glyphs onto the existing map. I've done a very rough mockup here, with some examples of how I would go about using the space. Click for a bigger view.
+
+![Draft soundmap](../../assets/images/alliscalm/labs-map-draft.png)
 
 Ideally this should be rendered with a Google Maps/OpenStreetMap style pan and scroll interface, as is currently on the British Library website. This could be made into a complete sub-site, with extra controls for filtering based on volume, frequency content, duration, etc, using the metadata information. Straight away this output gives us rich contextual information about the sound environment, in ways that wouldn't necessarily be obvious from listening to sounds one at a time.
 

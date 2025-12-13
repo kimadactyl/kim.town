@@ -5,12 +5,13 @@ pubDate: 'Jun 24 2014'
 tags: ['colonialism']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/england-losing/'
-heroImage: '../../assets/images/alliscalm/england-recycling-2.jpg'
 ---
 
 This World Cup, I've been quite surprised to find myself really enjoying the football -- but only when England _lose_. Why is this? What about my native country losing fills me with such schadenfreude?
 
 Dwelling on this, I've come to think that the England football team represents almost all the things I hate about this country.
+
+![Recycling bins for England merchandise](../../assets/images/alliscalm/england-recycling-2.jpg)
 
 - First and foremost, we are _the_ great colonial nation. "There is not a country in is World Cup that we, or one of our other European friends, have not invaded, extorted, or enslaved at some point." We are a nasty country, a racist country, a country that has conveniently forgotten almost its entire wealth is based on slavery and exploitation. Being beaten by those we might have _owned_ not so long ago feels like fantastic karmic retribution.
 
