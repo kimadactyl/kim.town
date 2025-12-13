@@ -15,7 +15,7 @@ const blog = defineCollection({
 			heroImage: image().optional(),
 			coverImageCredit: z.string().optional(),
 			tags: z.array(z.string()).optional(),
-			source: z.enum(['alliscalm', 'kimtown']).optional(),
+			source: z.enum(['alliscalm', 'kimtown', 'cassowary']).optional(),
 			sourceUrl: z.string().url().optional(),
 		}),
 });
