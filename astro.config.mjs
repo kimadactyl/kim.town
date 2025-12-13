@@ -11,7 +11,8 @@ import { remarkModifiedTime } from './src/plugins/remark-modified-time.mjs'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://alliscalm.net',
+	site: 'https://kimadactyl.github.io',
+	base: '/kim.town-v2',
 	integrations: [
 		mdx(),
 		sitemap(),
