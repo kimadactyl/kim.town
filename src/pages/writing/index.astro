@@ -2,24 +2,56 @@
 import { getCollection } from 'astro:content'
 import BlogCard from '../../components/BlogCard.astro'
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import WritingFilters from '../../components/WritingFilters.astro'
 
 const posts = (await getCollection('writing')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
+
+// Extract unique sources with counts
+const sourceCounts = posts.reduce(
+	(acc, post) => {
+		const source = post.data.source || 'unknown'
+		acc[source] = (acc[source] || 0) + 1
+		return acc
+	},
+	{} as Record<string, number>
+)
+
+const sources = Object.entries(sourceCounts)
+	.map(([name, count]) => ({ name, count }))
+	.sort((a, b) => b.count - a.count)
+
+// Extract unique tags with counts
+const tagCounts = posts.reduce(
+	(acc, post) => {
+		const tags = post.data.tags || []
+		tags.forEach((tag: string) => {
+			acc[tag] = (acc[tag] || 0) + 1
+		})
+		return acc
+	},
+	{} as Record<string, number>
+)
+
+const tags = Object.entries(tagCounts)
+	.map(([name, count]) => ({ name, count }))
+	.sort((a, b) => b.count - a.count)
 ---
 
 <BaseLayout>
 	<main class="app-container pt-36">
-		<h1 class="text-6xl pb-8 font-bold">Writing</h1>
-		<p class="md:w-2/3 text-lg leading-[2rem]">
-			A collection of my thoughts and experiences.
+		<h1 class="text-6xl pb-4 font-bold">Writing</h1>
+		<p class="md:w-2/3 text-lg leading-[2rem] opacity-80">
+			A collection of thoughts, research, and reflections spanning technology, sound, community, and social change.
 		</p>
 	</main>
-	<section class="app-container py-12">
+	<section class="app-container py-8">
+		<WritingFilters sources={sources} tags={tags} />
 		<ul class="posts-grid-container">
 			{
 				posts.map((post) => (
-					<li>
+					<li data-source={post.data.source || ''} data-tags={(post.data.tags || []).join(',')}>
 						<BlogCard post={post} />
 					</li>
 				))
@@ -27,3 +59,9 @@ const posts = (await getCollection('writing')).sort(
 		</ul>
 	</section>
 </BaseLayout>
+
+<style>
+	.posts-grid-container li {
+		transition: opacity 0.2s ease-out;
+	}
+</style>

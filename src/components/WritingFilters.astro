@@ -1,0 +1,410 @@
+---
+interface Props {
+	sources: { name: string; count: number }[]
+	tags: { name: string; count: number }[]
+}
+
+const { sources, tags } = Astro.props
+
+// Source display names
+const sourceLabels: Record<string, string> = {
+	alliscalm: 'All Is Calm',
+	gfsc: 'GFSC Studio',
+	kimtown: 'Kim Town',
+	'gfsc-community': 'GFSC Community',
+	cassowary: 'Cassowary',
+	resistancelab: 'Resistance Lab',
+}
+
+// Show top 12 tags initially
+const initialTagCount = 12
+const topTags = tags.slice(0, initialTagCount)
+const remainingTags = tags.slice(initialTagCount)
+---
+
+<div class="writing-filters">
+	<!-- Source Filter Section -->
+	<div class="filter-section">
+		<h3 class="filter-label">Source</h3>
+		<div class="filter-pills" id="source-filters">
+			<button class="filter-pill active" data-source="all">
+				<span class="pill-text">All</span>
+			</button>
+			{
+				sources.map((source) => (
+					<button class="filter-pill" data-source={source.name}>
+						<span class="pill-text">{sourceLabels[source.name] || source.name}</span>
+						<span class="pill-count">{source.count}</span>
+					</button>
+				))
+			}
+		</div>
+	</div>
+
+	<!-- Tag Filter Section -->
+	<div class="filter-section">
+		<h3 class="filter-label">Topics</h3>
+		<div class="filter-pills tags-container" id="tag-filters">
+			<button class="filter-pill active" data-tag="all">
+				<span class="pill-text">All</span>
+			</button>
+			{
+				topTags.map((tag) => (
+					<button class="filter-pill" data-tag={tag.name}>
+						<span class="pill-text">{tag.name.replace(/-/g, ' ')}</span>
+						<span class="pill-count">{tag.count}</span>
+					</button>
+				))
+			}
+			{
+				remainingTags.map((tag) => (
+					<button class="filter-pill hidden-tag" data-tag={tag.name}>
+						<span class="pill-text">{tag.name.replace(/-/g, ' ')}</span>
+						<span class="pill-count">{tag.count}</span>
+					</button>
+				))
+			}
+		</div>
+		{
+			remainingTags.length > 0 && (
+				<button class="expand-tags" id="expand-tags">
+					<span class="expand-text">Show {remainingTags.length} more topics</span>
+					<svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="6 9 12 15 18 9" />
+					</svg>
+				</button>
+			)
+		}
+	</div>
+
+	<!-- Active filters display -->
+	<div class="active-filters" id="active-filters">
+		<span class="results-count" id="results-count"></span>
+		<button class="clear-filters" id="clear-filters">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+				<line x1="18" y1="6" x2="6" y2="18" />
+				<line x1="6" y1="6" x2="18" y2="18" />
+			</svg>
+			Clear filters
+		</button>
+	</div>
+</div>
+
+<style>
+	.writing-filters {
+		margin-bottom: 2rem;
+		padding: 1.5rem 0;
+		border-bottom: 1px solid color-mix(in srgb, var(--color-foreground) 12%, transparent);
+	}
+
+	:global(.dark) .writing-filters {
+		border-bottom-color: color-mix(in srgb, var(--color-foreground-dark) 12%, transparent);
+	}
+
+	.filter-section {
+		margin-bottom: 1.25rem;
+	}
+
+	.filter-section:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.filter-label {
+		font-size: 0.7rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: color-mix(in srgb, var(--color-foreground) 50%, transparent);
+		margin-bottom: 0.75rem;
+	}
+
+	:global(.dark) .filter-label {
+		color: color-mix(in srgb, var(--color-foreground-dark) 50%, transparent);
+	}
+
+	.filter-pills {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.filter-pill {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		padding: 0.4rem 0.85rem;
+		font-size: 0.8rem;
+		font-weight: 500;
+		border: 1px solid color-mix(in srgb, var(--color-foreground) 15%, transparent);
+		border-radius: 999px;
+		background: transparent;
+		color: color-mix(in srgb, var(--color-foreground) 70%, transparent);
+		cursor: pointer;
+		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+		white-space: nowrap;
+	}
+
+	:global(.dark) .filter-pill {
+		border-color: color-mix(in srgb, var(--color-foreground-dark) 20%, transparent);
+		color: color-mix(in srgb, var(--color-foreground-dark) 70%, transparent);
+	}
+
+	.filter-pill:hover {
+		border-color: var(--color-primary);
+		color: var(--color-primary);
+		background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+	}
+
+	:global(.dark) .filter-pill:hover {
+		border-color: var(--color-primary-dark);
+		color: var(--color-primary-dark);
+		background: color-mix(in srgb, var(--color-primary-dark) 12%, transparent);
+	}
+
+	.filter-pill.active {
+		border-color: var(--color-primary);
+		background: var(--color-primary);
+		color: var(--color-background);
+	}
+
+	:global(.dark) .filter-pill.active {
+		border-color: var(--color-primary-dark);
+		background: var(--color-primary-dark);
+		color: var(--color-background-dark);
+	}
+
+	.pill-count {
+		font-size: 0.65rem;
+		opacity: 0.6;
+		font-weight: 400;
+	}
+
+	.filter-pill.active .pill-count {
+		opacity: 0.8;
+	}
+
+	.hidden-tag {
+		display: none;
+	}
+
+	.tags-expanded .hidden-tag {
+		display: inline-flex;
+		animation: fadeIn 0.3s ease-out forwards;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+			transform: translateY(-4px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.expand-tags {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		margin-top: 0.75rem;
+		padding: 0;
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: var(--color-primary);
+		background: none;
+		border: none;
+		cursor: pointer;
+		transition: opacity 0.2s;
+	}
+
+	:global(.dark) .expand-tags {
+		color: var(--color-primary-dark);
+	}
+
+	.expand-tags:hover {
+		opacity: 0.7;
+	}
+
+	.expand-icon {
+		width: 1rem;
+		height: 1rem;
+		transition: transform 0.3s ease;
+	}
+
+	.tags-expanded .expand-icon {
+		transform: rotate(180deg);
+	}
+
+	.tags-expanded .expand-text::before {
+		content: 'Show fewer topics';
+	}
+
+	.tags-expanded .expand-text {
+		font-size: 0;
+	}
+
+	.tags-expanded .expand-text::before {
+		font-size: 0.75rem;
+	}
+
+	.active-filters {
+		display: none;
+		align-items: center;
+		gap: 1rem;
+		margin-top: 1.25rem;
+		padding-top: 1rem;
+		border-top: 1px dashed color-mix(in srgb, var(--color-foreground) 10%, transparent);
+	}
+
+	:global(.dark) .active-filters {
+		border-top-color: color-mix(in srgb, var(--color-foreground-dark) 10%, transparent);
+	}
+
+	.active-filters.visible {
+		display: flex;
+	}
+
+	.results-count {
+		font-size: 0.85rem;
+		color: color-mix(in srgb, var(--color-foreground) 60%, transparent);
+	}
+
+	:global(.dark) .results-count {
+		color: color-mix(in srgb, var(--color-foreground-dark) 60%, transparent);
+	}
+
+	.clear-filters {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		padding: 0.35rem 0.7rem;
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: color-mix(in srgb, var(--color-foreground) 50%, transparent);
+		background: color-mix(in srgb, var(--color-foreground) 5%, transparent);
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.2s;
+	}
+
+	:global(.dark) .clear-filters {
+		color: color-mix(in srgb, var(--color-foreground-dark) 50%, transparent);
+		background: color-mix(in srgb, var(--color-foreground-dark) 8%, transparent);
+	}
+
+	.clear-filters:hover {
+		color: var(--color-foreground);
+		background: color-mix(in srgb, var(--color-foreground) 10%, transparent);
+	}
+
+	:global(.dark) .clear-filters:hover {
+		color: var(--color-foreground-dark);
+		background: color-mix(in srgb, var(--color-foreground-dark) 15%, transparent);
+	}
+
+	.clear-filters svg {
+		width: 0.85rem;
+		height: 0.85rem;
+	}
+
+	/* Responsive adjustments */
+	@media (max-width: 640px) {
+		.filter-pills {
+			gap: 0.4rem;
+		}
+
+		.filter-pill {
+			padding: 0.35rem 0.7rem;
+			font-size: 0.75rem;
+		}
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const sourceFilters = document.getElementById('source-filters')
+		const tagFilters = document.getElementById('tag-filters')
+		const expandBtn = document.getElementById('expand-tags')
+		const activeFiltersEl = document.getElementById('active-filters')
+		const resultsCount = document.getElementById('results-count')
+		const clearBtn = document.getElementById('clear-filters')
+		const postsContainer = document.querySelector('.posts-grid-container')
+
+		let activeSource = 'all'
+		let activeTag = 'all'
+
+		// Expand/collapse tags
+		expandBtn?.addEventListener('click', () => {
+			tagFilters?.classList.toggle('tags-expanded')
+		})
+
+		// Filter posts
+		function filterPosts() {
+			const posts = postsContainer?.querySelectorAll('li') as NodeListOf<HTMLElement>
+			let visibleCount = 0
+
+			posts?.forEach((post) => {
+				const postSource = post.dataset.source || ''
+				const postTags = (post.dataset.tags || '').split(',')
+
+				const matchesSource = activeSource === 'all' || postSource === activeSource
+				const matchesTag = activeTag === 'all' || postTags.includes(activeTag)
+
+				if (matchesSource && matchesTag) {
+					post.style.display = ''
+					post.style.animation = 'fadeIn 0.3s ease-out'
+					visibleCount++
+				} else {
+					post.style.display = 'none'
+				}
+			})
+
+			// Update UI
+			const hasActiveFilters = activeSource !== 'all' || activeTag !== 'all'
+			activeFiltersEl?.classList.toggle('visible', hasActiveFilters)
+
+			if (resultsCount) {
+				resultsCount.textContent = `Showing ${visibleCount} ${visibleCount === 1 ? 'post' : 'posts'}`
+			}
+		}
+
+		// Handle source filter clicks
+		sourceFilters?.addEventListener('click', (e) => {
+			const target = (e.target as HTMLElement).closest('.filter-pill') as HTMLElement
+			if (!target) return
+
+			sourceFilters.querySelectorAll('.filter-pill').forEach((p) => p.classList.remove('active'))
+			target.classList.add('active')
+			activeSource = target.dataset.source || 'all'
+			filterPosts()
+		})
+
+		// Handle tag filter clicks
+		tagFilters?.addEventListener('click', (e) => {
+			const target = (e.target as HTMLElement).closest('.filter-pill') as HTMLElement
+			if (!target) return
+
+			tagFilters.querySelectorAll('.filter-pill').forEach((p) => p.classList.remove('active'))
+			target.classList.add('active')
+			activeTag = target.dataset.tag || 'all'
+			filterPosts()
+		})
+
+		// Clear filters
+		clearBtn?.addEventListener('click', () => {
+			activeSource = 'all'
+			activeTag = 'all'
+
+			sourceFilters?.querySelectorAll('.filter-pill').forEach((p, i) => {
+				p.classList.toggle('active', i === 0)
+			})
+			tagFilters?.querySelectorAll('.filter-pill').forEach((p, i) => {
+				p.classList.toggle('active', i === 0)
+			})
+
+			filterPosts()
+		})
+	})
+</script>

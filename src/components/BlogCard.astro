@@ -7,7 +7,7 @@ import { Icon } from 'astro-icon/components'
 const { post } = Astro.props
 
 const isExternal = !!post.data.externalUrl
-const href = isExternal ? post.data.externalUrl : `${SITE_BASE}/blog/${post.id}/`
+const href = isExternal ? post.data.externalUrl : `${SITE_BASE}/writing/${post.id}/`
 
 // Extract domain from external URL for display
 const getDomain = (url: string) => {
