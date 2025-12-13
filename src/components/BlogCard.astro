@@ -2,32 +2,71 @@
 import { SITE_BASE } from '@/consts'
 import FormattedDate from './FormattedDate.astro'
 import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
 
 const { post } = Astro.props
+
+const isExternal = !!post.data.externalUrl
+const href = isExternal ? post.data.externalUrl : `${SITE_BASE}/blog/${post.id}/`
+
+// Extract domain from external URL for display
+const getDomain = (url: string) => {
+	try {
+		return new URL(url).hostname.replace('www.', '')
+	} catch {
+		return ''
+	}
+}
+const externalDomain = isExternal ? getDomain(post.data.externalUrl) : ''
 ---
 
 <a
-	href={`${SITE_BASE}/blog/${post.id}/`}
-	class="flex flex-col gap-4 pb-8 h-full group transition-colors"
+	href={href}
+	target={isExternal ? '_blank' : undefined}
+	rel={isExternal ? 'noopener noreferrer' : undefined}
+	class:list={[
+		"flex flex-col gap-4 pb-8 h-full group transition-colors relative",
+		isExternal && "external-post"
+	]}
 >
+	{/* External link badge */}
+	{isExternal && (
+		<div class="absolute top-3 right-3 z-10 bg-foreground/90 dark:bg-foreground-dark/90 text-background dark:text-background-dark px-2 py-1 rounded-md text-xs font-medium flex items-center gap-1 shadow-md">
+			<Icon name="mdi:open-in-new" class="w-3.5 h-3.5" />
+			<span>External</span>
+		</div>
+	)}
+
 	{
 		post.data.heroImage && (
-			<Image
-				src={post.data.heroImage}
-				alt={post.data.title}
-				class="object-cover rounded-xl aspect-video"
-			/>
+			<div class="relative overflow-hidden rounded-xl">
+				<Image
+					src={post.data.heroImage}
+					alt={post.data.title}
+					class="object-cover aspect-video w-full"
+				/>
+			</div>
 		)
 	}
 	<h4
-		class="text-2xl font-semibold group-hover:text-primary dark:group-hover:text-primary-dark group-hover:underline transition-colors"
+		class="text-2xl font-semibold group-hover:text-primary dark:group-hover:text-primary-dark group-hover:underline transition-colors flex items-start gap-2"
 	>
-		{post.data.title}
+		<span>{post.data.title}</span>
+		{isExternal && (
+			<Icon name="mdi:open-in-new" class="w-5 h-5 flex-shrink-0 mt-1 opacity-60" />
+		)}
 	</h4>
 	<p class="line-clamp-3 opacity-80">
 		{post.data.description}
 	</p>
-	<p class="uppercase text-sm mt-auto tracking-tight">
-		<FormattedDate date={post.data.pubDate} />
-	</p>
+	<div class="flex items-center gap-3 mt-auto">
+		<p class="uppercase text-sm tracking-tight">
+			<FormattedDate date={post.data.pubDate} />
+		</p>
+		{isExternal && externalDomain && (
+			<span class="text-xs px-2 py-0.5 rounded-full bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark font-medium">
+				{externalDomain}
+			</span>
+		)}
+	</div>
 </a>
