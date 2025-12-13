@@ -5,7 +5,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Guidelines
 
 - Never summarize content for me. Always provide full, complete information.
-- When importing posts, ensure every post has images (heroImage in frontmatter) and double-check that all content has been properly ported over from the original source.
+- Never summarise descriptions either. I always just want the first sentence or two from the article if there isn't a human-written one.
+- I just want no AI written content ever, ever, anywhere. I have to keep re-emphasising this - stop doing it.
+- When importing posts, ensure every post has images (heroImage in frontmatter) and double-check that all content has been properly ported over from the original source and not summarised.
 - Don't prompt me to approve commands unless I specifically ask you
 - Store original URLs in article frontmatter and prompt me if you get 404s
 - Store posts in folders by year
