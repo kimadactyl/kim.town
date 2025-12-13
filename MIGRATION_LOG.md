@@ -6,9 +6,9 @@
 
 ---
 
-## Successfully Migrated Posts (31 total)
+## Successfully Migrated Posts (37 total)
 
-### From alliscalm.net (19 posts)
+### From alliscalm.net (25 posts)
 
 | Post | Date | Tags |
 |------|------|------|
@@ -31,6 +31,12 @@
 | Sounds and the Web Don't Work | May 16 2012 | sound, web |
 | Work for Change | Nov 18 2012 | portfolio, web |
 | Kate's Cuttings | Nov 18 2012 | portfolio, web |
+| Acoustic Citizenship: The Night and Day Debacle | Jan 18 2014 | academic, sound, manchester |
+| Why I love watching England lose | Jun 24 2014 | colonialism |
+| Experiments in JavaScript: arbor.js | Jun 22 2012 | web, technology |
+| Recordings from The Termite Club at Ladyfest Leeds 2007 | Feb 07 2014 | sound, portfolio |
+| Agriculture: Soundscape recordings from 2007 | Oct 22 2012 | sound, portfolio |
+| Rethinking Sound and the Web: Part 3 | Sep 23 2013 | sound, web, datavis |
 
 ### From kim.town (12 posts)
 
@@ -51,18 +57,18 @@
 
 ---
 
-## Posts Not Migrated (404 errors)
+## Posts Recovered (previously 404)
 
-These posts were listed on the original sites but returned 404 errors when attempting to fetch:
+These posts were originally 404 but have now been recovered:
 
-| Post | Source |
-|------|--------|
-| Acoustic Citizenship: The Night and Day Debacle | alliscalm.net |
-| Why I love watching England lose | alliscalm.net |
-| Experiments in JavaScript: arbor.js | alliscalm.net |
-| Recordings from The Termite Club at Ladyfest Leeds 2007 | alliscalm.net |
-| Agriculture: Soundscape recordings from 2007 | alliscalm.net |
-| Rethinking Sound and the Web: Part 3 | alliscalm.net |
+| Post | Source | Recovered |
+|------|--------|-----------|
+| Acoustic Citizenship: The Night and Day Debacle | alliscalm.net | Dec 13 2024 |
+| Why I love watching England lose | alliscalm.net | Dec 13 2024 |
+| Experiments in JavaScript: arbor.js | alliscalm.net | Dec 13 2024 |
+| Recordings from The Termite Club at Ladyfest Leeds 2007 | alliscalm.net | Dec 13 2024 |
+| Agriculture: Soundscape recordings from 2007 | alliscalm.net | Dec 13 2024 |
+| Rethinking Sound and the Web: Part 3 | alliscalm.net | Dec 13 2024 |
 
 ---
 
@@ -140,6 +146,6 @@ All posts have been verified against original sources:
 - [x] Add hero images to post frontmatter (15 posts with hero images)
 - [x] Verify all posts have complete content (not summaries)
 - [x] Add inline images to posts that reference them
-- [ ] Verify all internal links work
-- [ ] Update `astro.config.mjs` with production URL
-- [ ] Attempt to recover 404'd posts via Wayback Machine if desired
+- [x] Verify all internal links work
+- [x] Update `astro.config.mjs` with production URL
+- [x] Recover 404'd posts (6 posts recovered Dec 13 2024)
