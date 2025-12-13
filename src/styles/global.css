@@ -7,12 +7,17 @@
 	--font-sans: 'Inter Variable', sans-serif;
 	--font-mono: 'JetBrains Mono Variable', monospace;
 
-	--color-foreground: #0c0c0c;
-	--color-foreground-dark: #fafafa;
-	--color-background: #ffffff;
-	--color-background-dark: #2b2b2b;
-	--color-primary: #0784b5;
-	--color-primary-dark: #9bd4e4;
+	/* Light mode: warm parchment with wine ink */
+	--color-foreground: #2d1f24;
+	--color-background: #faf7f5;
+
+	/* Dark mode: deep wine cellar with candlelit warmth */
+	--color-foreground-dark: #ede4e6;
+	--color-background-dark: #5e3538;
+
+	/* Accent: dusty rose that ages gracefully */
+	--color-primary: #9e4f5d;
+	--color-primary-dark: #c98b94;
 }
 
 html {
