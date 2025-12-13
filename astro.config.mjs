@@ -3,6 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import partytown from '@astrojs/partytown'
+import react from '@astrojs/react'
 import icon from 'astro-icon'
 import rehypeFigureTitle from 'rehype-figure-title'
 import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis'
@@ -17,6 +18,7 @@ export default defineConfig({
 		mdx(),
 		sitemap(),
 		icon(),
+		react(),
 		partytown({
 			config: {
 				forward: ['dataLayer.push'],

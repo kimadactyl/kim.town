@@ -12,7 +12,7 @@ import LogoSVG from '../assets/logo.svg'
 			<a href={`${SITE_BASE}/`} aria-label="Home">
 				<LogoSVG height={36} width={36} />
 			</a>
-			<div class="gap-8 hidden md:flex items-center">
+			<div class="gap-6 hidden md:flex items-center">
 				{
 					WebsiteLinks.map((link) => (
 						<NavbarLink
@@ -24,6 +24,14 @@ import LogoSVG from '../assets/logo.svg'
 						</NavbarLink>
 					))
 				}
+				<button
+					onclick="window.openSearchModal && window.openSearchModal()"
+					class="p-2 rounded-lg hover:bg-text/10 dark:hover:bg-text-dark/10 transition-colors cursor-pointer"
+					aria-label="Search"
+					title="Search (Cmd+K)"
+				>
+					<Icon aria-hidden name="mdi:magnify" size={24} />
+				</button>
 				<ThemeSelector />
 			</div>
 			<button
@@ -59,6 +67,14 @@ import LogoSVG from '../assets/logo.svg'
 							</NavbarLink>
 						))
 					}
+					<button
+						onclick="window.openSearchModal && window.openSearchModal()"
+						class="flex items-center gap-3 text-2xl font-light mt-4"
+						aria-label="Search"
+					>
+						<Icon aria-hidden name="mdi:magnify" size={28} />
+						Search
+					</button>
 					<ThemeSelector class:list="mt-4" />
 				</div>
 			</div>

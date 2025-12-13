@@ -1,0 +1,16 @@
+---
+import SearchModal from './SearchModal'
+import { SITE_BASE } from '../consts'
+
+// Import the search data - this will be generated at build time
+let searchData: any[] = []
+try {
+	const searchModule = await import('../../.json/search.json')
+	searchData = searchModule.default || []
+} catch (e) {
+	// Search data not yet generated, will be empty until first build
+	console.warn('Search data not found. Run `npm run generate-search` to create it.')
+}
+---
+
+<SearchModal client:load searchData={searchData} basePath={SITE_BASE} />

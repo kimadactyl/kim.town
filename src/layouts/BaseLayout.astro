@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro'
 import Navbar from '../components/Navbar.astro'
 import Footer from '../components/Footer.astro'
+import Search from '../components/Search.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 
 interface Props {
@@ -26,8 +27,15 @@ import '@fontsource-variable/jetbrains-mono'
 	<body
 		class="text-foreground bg-background font-light dark:text-foreground-dark dark:bg-background-dark transition-colors"
 	>
+		<script is:inline>
+			// Global function to open search - defined early so buttons can use it
+			window.openSearchModal = function() {
+				window.dispatchEvent(new CustomEvent('open-search'))
+			}
+		</script>
 		<Navbar title={SITE_TITLE} />
 		<slot />
 		<Footer />
+		<Search />
 	</body>
 </html>
