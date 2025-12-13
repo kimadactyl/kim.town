@@ -40,69 +40,86 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 <BaseLayout title={title} description={description}>
 	<main>
 		<article>
-			<div
-				class="app-container flex flex-col lg:flex-row-reverse justify-between gap-8 py-24 relative"
-			>
+			<!-- Hero Section -->
+			{heroImage ? (
+				<header class="hero-header relative w-full min-h-[50vh] md:min-h-[65vh] flex items-end overflow-hidden">
+					<div class="hero-image-wrapper absolute inset-0">
+						<Image
+							src={heroImage}
+							alt={title}
+							class="w-full h-full object-cover"
+							widths={[640, 960, 1280, 1920]}
+							sizes="100vw"
+						/>
+						<div class="hero-overlay absolute inset-0"></div>
+					</div>
+					<div class="hero-content relative z-10 w-full pb-12 pt-32 md:pb-16 md:pt-48">
+						<div class="app-container">
+							<div class="max-w-4xl">
+								<h1 class="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
+									{title}
+								</h1>
+								<div class="hero-meta flex items-center gap-4 md:gap-6 flex-wrap text-white/90 text-sm md:text-base">
+									<span class="flex items-center gap-2">
+										<Icon name="mdi:calendar-month-outline" class="w-5 h-5" />
+										<FormattedDate date={pubDate} />
+									</span>
+									<span class="flex items-center gap-2">
+										<Icon name="mdi:clock-time-four-outline" class="w-5 h-5" />
+										{remarkPluginFrontmatter.minutesRead}
+									</span>
+									{updatedDate && (
+										<span class="flex items-center gap-2">
+											<Icon name="mdi:calendar-refresh-outline" class="w-5 h-5" />
+											Updated <FormattedDate date={updatedDate} />
+										</span>
+									)}
+								</div>
+							</div>
+						</div>
+					</div>
+					{coverImageCredit && (
+						<p class="absolute bottom-3 right-4 text-white/60 text-xs italic z-10">
+							{coverImageCredit}
+						</p>
+					)}
+				</header>
+			) : (
+				<header class="pt-24 pb-8 md:pt-32 md:pb-12">
+					<div class="app-container">
+						<div class="max-w-4xl">
+							<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
+								{title}
+							</h1>
+							<div class="flex items-center gap-4 md:gap-6 flex-wrap text-foreground/70 dark:text-foreground-dark/70 text-sm md:text-base">
+								<span class="flex items-center gap-2">
+									<Icon name="mdi:calendar-month-outline" class="w-5 h-5 text-primary dark:text-primary-dark" />
+									<FormattedDate date={pubDate} />
+								</span>
+								<span class="flex items-center gap-2">
+									<Icon name="mdi:clock-time-four-outline" class="w-5 h-5 text-primary dark:text-primary-dark" />
+									{remarkPluginFrontmatter.minutesRead}
+								</span>
+								{updatedDate && (
+									<span class="flex items-center gap-2">
+										<Icon name="mdi:calendar-refresh-outline" class="w-5 h-5 text-primary dark:text-primary-dark" />
+										Updated <FormattedDate date={updatedDate} />
+									</span>
+								)}
+							</div>
+						</div>
+					</div>
+				</header>
+			)}
+
+			<!-- Article Content -->
+			<div class="app-container flex flex-col lg:flex-row-reverse justify-between gap-8 py-12 md:py-16 relative">
 				<div class="md:w-1/4 relative">
 					<div class="sticky top-0 md:top-28 hidden lg:block">
 						<TableOfContents headings={headings} />
 					</div>
 				</div>
 				<div class="grow w-full md:max-w-[75ch]">
-					<div>
-						<h1 class="text-4xl sm:text-5xl leading-snug pt-12 font-bold">
-							{title}
-						</h1>
-						<div class="text-lg flex items-center gap-4 flex-wrap py-8">
-							<!-- Publish date -->
-							<span>
-								<Icon
-									name="mdi:calendar-month-outline"
-									class="inline-block text-primary dark:text-primary-dark"
-								/>
-								<FormattedDate date={pubDate} />
-							</span>
-
-							<!-- Updated date -->
-							{
-								updatedDate && (
-									<span>
-										<Icon
-											name="mdi:calendar-refresh-outline"
-											class="inline-block text-primary dark:text-primary-dark"
-										/>
-										Last updated on <FormattedDate date={updatedDate} />
-									</span>
-								)
-							}
-
-							<!-- Read time -->
-							<span>
-								<Icon
-									name="mdi:clock-time-four-outline"
-									class="inline-block text-primary dark:text-primary-dark"
-								/>
-								{remarkPluginFrontmatter.minutesRead}
-							</span>
-						</div>
-
-						{
-							heroImage && (
-								<>
-									<Image
-										src={heroImage}
-										alt={title}
-										class="rounded-lg"
-									/>
-									{coverImageCredit && (
-										<p class="mt-2 mb-8 opacity-80 italic text-sm">
-											Image Credit: {coverImageCredit}
-										</p>
-									)}
-								</>
-							)
-						}
-					</div>
 					{source === 'cassowary' && <CassowaryCredit />}
 					<div
 						class="prose prose-neutral prose-lg md:prose-xl dark:prose-invert prose-img:rounded-xl prose-figure:text-center prose-img:mx-auto"
@@ -121,3 +138,60 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 		</article>
 	</main>
 </BaseLayout>
+
+<style>
+	.hero-header {
+		background: linear-gradient(135deg, #2d1f24 0%, #5e3538 100%);
+	}
+
+	.hero-overlay {
+		background: linear-gradient(
+			to top,
+			rgba(45, 31, 36, 0.95) 0%,
+			rgba(45, 31, 36, 0.7) 30%,
+			rgba(45, 31, 36, 0.3) 60%,
+			rgba(45, 31, 36, 0.1) 100%
+		);
+	}
+
+	.hero-image-wrapper img {
+		animation: heroZoom 20s ease-out forwards;
+	}
+
+	.hero-title {
+		animation: fadeSlideUp 0.8s ease-out both;
+	}
+
+	.hero-meta {
+		animation: fadeSlideUp 0.8s ease-out 0.2s both;
+	}
+
+	@keyframes heroZoom {
+		from {
+			transform: scale(1.05);
+		}
+		to {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes fadeSlideUp {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	/* Reduce motion for accessibility */
+	@media (prefers-reduced-motion: reduce) {
+		.hero-image-wrapper img,
+		.hero-title,
+		.hero-meta {
+			animation: none;
+		}
+	}
+</style>
