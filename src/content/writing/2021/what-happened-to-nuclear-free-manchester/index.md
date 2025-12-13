@@ -2,7 +2,7 @@
 title: 'What Happened to Nuclear Free Manchester?'
 description: "Now not only do we have several companies here who manufacture or assist in the production of nuclear missiles and submarines, we put 'em in the regional marketing brochure."
 pubDate: 'Sep 13 2021'
-tags: ['arms-trade', 'nuclear-weapons', 'manchester', 'dsei']
+tags: ['politics', 'manchester']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2021/what-happened-to-nuclear-free-manchester/'
 ---

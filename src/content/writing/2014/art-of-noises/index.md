@@ -3,7 +3,7 @@ title: 'Art of Noises: risk, live music, play and power'
 description: 'Art Of Noises is an experimental board game centered on avant-garde musical improvisation.'
 pubDate: 'Oct 15 2014'
 updatedDate: 'Oct 13 2015'
-tags: ['game-design', 'experimental-music', 'improvisation', 'performance']
+tags: ['games', 'music']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/art-of-noises/'
 heroImage: './images/art-of-noises.jpg'

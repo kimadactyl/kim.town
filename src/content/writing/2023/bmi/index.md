@@ -2,7 +2,7 @@
 title: 'BMI'
 description: 'BMI, or "body mass index", is a very old — and famously completely fucked — health metric.'
 pubDate: 'Aug 15 2023'
-tags: ['health-metrics', 'fatphobia', 'medical-history', 'critique']
+tags: ['health', 'history', 'critique']
 source: 'kimtown'
 ---
 

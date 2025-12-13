@@ -3,7 +3,7 @@ title: 'Experiments in JavaScript: arbor.js'
 description: 'Arbor.js is a great little library that lets you make visual thesaurus style springy node diagrams using JSON network descriptions.'
 pubDate: 'Jun 22 2012'
 updatedDate: 'Oct 14 2015'
-tags: ['javascript', 'data-visualization', 'web-development']
+tags: ['web', 'data']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/arborjs-experiments/'
 ---

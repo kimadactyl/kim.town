@@ -2,7 +2,7 @@
 title: 'Community'
 description: "'Community' is a concept at the heart of a lot of the work I've done over my life. I think for most people most of the things that bring them happiness and allow them to assert their identity are through ideas of community and family."
 pubDate: 'Oct 01 2023'
-tags: ['community-definition', 'social-bonds', 'belonging']
+tags: ['community']
 source: 'kimtown'
 ---
 

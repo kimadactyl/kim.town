@@ -2,7 +2,7 @@
 title: "Goodhart's Law"
 description: 'When a measure becomes a target, it ceases to be a good measure.'
 pubDate: 'Apr 01 2023'
-tags: ['metrics', 'organizational-theory', 'perverse-incentives']
+tags: ['organizing']
 source: 'kimtown'
 ---
 

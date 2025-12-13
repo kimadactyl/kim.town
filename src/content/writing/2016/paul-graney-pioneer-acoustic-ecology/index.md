@@ -2,7 +2,7 @@
 title: 'Paul Graney, Pioneer of Acoustic Ecology?'
 description: 'I discovered Paul Graney at Manchester Histories Festival, learning about a figure notably absent from historical records.'
 pubDate: 'Jun 14 2016'
-tags: ['acoustic-ecology', 'manchester', 'sound-archives', 'oral-history']
+tags: ['sound', 'manchester', 'history']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/paul-graney-pioneer-acoustic-ecology/'
 heroImage: './images/PaulGraney1.jpg'

@@ -2,7 +2,7 @@
 title: 'Everything is connected, but should it be?'
 description: "The most important question to ask whenever you are developing software is: should this be connected to the internet at all? And if it should be, how do we minimise the amount of data we store to do so?"
 pubDate: 'Aug 03 2021'
-tags: ['surveillance', 'privacy', 'data-collection', 'marginalized-communities']
+tags: ['surveillance']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2021/everything-is-connected/'
 ---

@@ -2,7 +2,7 @@
 title: 'What is a factory? Or, how the Industrial Revolution made Facebook possible'
 description: 'Most obviously, a factory is a place: a building where products are assembled on a production line.'
 pubDate: 'Jan 02 2016'
-tags: ['industrial-revolution', 'technology-history', 'factories', 'computing-history']
+tags: ['history', 'factories']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/what-is-a-factory/'
 heroImage: './images/Eniac.jpg'

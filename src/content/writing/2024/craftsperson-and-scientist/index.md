@@ -2,7 +2,7 @@
 title: 'The Craftsperson and the Scientist'
 description: "Two ways of working we've identified through our collaborative practice. Some people work best iteratively and some would prefer to forge ahead alone – but how do we ensure these approaches play nicely together?"
 pubDate: 'Mar 06 2024'
-tags: ['working-styles', 'collaboration', 'methodology', 'team-dynamics']
+tags: ['organizing', 'methodology']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2024/craftsperson-and-scientist/'
 ---

@@ -2,7 +2,7 @@
 title: 'Selective Imagination: you can be anything you want, but you can''t be that'
 description: 'For me, one of the most frustrating things about any kind of vaguely nerdy fandom is the application of what I can only describe as selective imagination.'
 pubDate: 'Jun 30 2014'
-tags: ['representation', 'gaming', 'fantasy', 'diversity']
+tags: ['diversity', 'games']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/selective-imagination/'
 heroImage: './images/netrunner-magewars.png'

@@ -2,7 +2,7 @@
 title: 'Our First Year of Community Technology Partnerships'
 description: "Key findings from our National Lottery Community Fund funded project. What we've learnt, what we've done, what we want to do, what's next."
 pubDate: 'May 07 2024'
-tags: ['community-technology-partnerships', 'placecal', 'research-report', 'digital-inclusion']
+tags: ['community-tech', 'placecal', 'research']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2024/community-tech-partnerships-year-1-report/'
 ---

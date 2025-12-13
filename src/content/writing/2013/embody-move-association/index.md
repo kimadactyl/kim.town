@@ -2,7 +2,7 @@
 title: 'Embody Move Association'
 description: 'This project involved redesigning a website for Embody Move Association, a practitioner training organization.'
 pubDate: 'Sep 23 2013'
-tags: ['drupal', 'web-design', 'responsive-design', 'client-work']
+tags: ['web', 'client-work']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/embody-move-association/'
 heroImage: './images/embody-move-association-1.png'

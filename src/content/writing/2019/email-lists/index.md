@@ -2,7 +2,7 @@
 title: 'Why an Email List is the Most Important Tool for Community Groups'
 description: "When starting a new community group or campaign of any type, one of the first things to get right is group communication. Despite dozens of tools claiming to sort out this kind of thing, in my experience nothing beats an email list."
 pubDate: 'Oct 25 2019'
-tags: ['email', 'organizing-tools', 'communication', 'practical-guide']
+tags: ['organizing', 'guide']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2019/email-lists/'
 ---

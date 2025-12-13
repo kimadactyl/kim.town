@@ -2,7 +2,7 @@
 title: 'Tai Chi School'
 description: 'Beta website for my own business, Tai Chi School, offering online Tai Chi instruction.'
 pubDate: 'Apr 11 2016'
-tags: ['ruby-on-rails', 'e-commerce', 'client-work', 'tai-chi']
+tags: ['web', 'client-work', 'personal']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/tai-chi-school/'
 heroImage: './images/Screenshot-from-2016-06-30-14-27-09.png'

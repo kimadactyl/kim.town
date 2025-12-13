@@ -2,7 +2,7 @@
 title: 'Data is meaningless without social power'
 description: "We have the data, but who is listening? How can we hope to solve social problems using open data when we're having trouble getting any kind of progress on social issues that have been widely documented for decades?"
 pubDate: 'Nov 25 2016'
-tags: ['data-justice', 'racism', 'police-violence', 'open-data', 'activism']
+tags: ['critique', 'policing', 'data', 'activism']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2016/social-power-data/'
 ---

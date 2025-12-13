@@ -2,7 +2,7 @@
 title: 'Sounds and the Web Don''t Work'
 description: 'Generally speaking, I think the web handles audio very badly.'
 pubDate: 'May 16 2012'
-tags: ['audio-visualization', 'ux-design', 'web-audio']
+tags: ['sound', 'design', 'web']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/sounds-and-the-web-dont-work/'
 ---
