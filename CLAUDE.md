@@ -10,6 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Store original URLs in article frontmatter and prompt me if you get 404s
 - Store posts in folders by year
 - Store images in a folder in the post directory
+- Use the claude frontend skill to generate any frontend
 
 ## Project Overview
 

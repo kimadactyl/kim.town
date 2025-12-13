@@ -1,79 +1,77 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import { SITE_BASE, SocialLinks } from '../consts'
-import { Icon } from 'astro-icon/components'
-import BlogCard from '../components/BlogCard.astro'
-import { getCollection } from 'astro:content'
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_BASE, SocialLinks } from "../consts";
+import { Icon } from "astro-icon/components";
+import BlogCard from "../components/BlogCard.astro";
+import { getCollection } from "astro:content";
 
-const posts = (await getCollection('blog'))
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.slice(0, 4)
+const posts = (await getCollection("blog"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
 ---
 
 <BaseLayout>
-	<main
-		class="app-container flex flex-col gap-12 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
-	>
-		<div>
-			<p class="block text-3xl opacity-70 mt-9 mb-4">Welcome to</p>
-			<h1 class="text-8xl font-bold leading-none">Kim Town</h1>
-		</div>
-		<p class="text-2xl max-w-2xl font-light leading-normal">
-			Kim Foale's blog. Writing on technology, sound, games, and social change.
-		</p>
-		<div class="flex flex-wrap gap-8">
-			{
-				SocialLinks.map((link) => (
-					<a
-						class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
-						href={link.url}
-						target="_blank"
-					>
-						{link.name}
-					</a>
-				))
-			}
-		</div>
-	</main>
+  <main
+    class="app-container flex flex-col gap-12 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
+  >
+    <div>
+      <p class="block text-3xl opacity-70 mt-9 mb-4">Welcome to</p>
+      <h1 class="text-8xl font-bold leading-none">Kim Town</h1>
+    </div>
+    <p class="text-2xl max-w-2xl font-light leading-normal">
+      Kim Foale's blog. Writing on technology, sound, games, and social change.
+    </p>
+    <div class="flex flex-wrap gap-8">
+      {
+        SocialLinks.map((link) => (
+          <a
+            class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
+            href={link.url}
+            target="_blank"
+          >
+            {link.name}
+          </a>
+        ))
+      }
+    </div>
+  </main>
 
-	<!-- Recent Posts Section -->
-	<section class="app-container">
-		<h2 class="section-title">Recent Posts</h2>
-		<div class="posts-grid-container">
-			{posts.map((post) => <BlogCard post={post} />)}
-		</div>
-		<a class="btn-secondary" href={`${SITE_BASE}/blog`}
-			>Read All
-			<Icon size={20} name="mdi:arrow-right" />
-		</a>
-	</section>
+  <!-- Recent Posts Section -->
+  <section class="app-container">
+    <h2 class="section-title">Recent Posts</h2>
+    <div class="posts-grid-container">
+      {posts.map((post) => <BlogCard post={post} />)}
+    </div>
+    <a class="btn-secondary" href={`${SITE_BASE}/blog`}
+      >Read All
+      <Icon size={20} name="mdi:arrow-right" />
+    </a>
+  </section>
 
-	<!-- About Section -->
-	<section class="app-container py-42 grid lg:grid-cols-2 gap-28 lg:gap-10">
-		<div class="space-y-6">
-			<h2 class="section-title">About Me</h2>
-			<p class="text-lg max-w-xl pb-4">
-				I'm Kim Foale, a technologist, sound artist, and community organiser based in Manchester.
-			</p>
-			<a class="btn-secondary" href={`${SITE_BASE}/about`}
-				>Go to About
-				<Icon size={20} name="mdi:arrow-right" />
-			</a>
-		</div>
-		<div class="space-y-6">
-			<h2 class="section-title">Get in touch</h2>
-			<p class="text-lg max-w-xl">
-				Find me on social media or get in touch via email.
-			</p>
-			<div class="flex flex-wrap mt-auto space-x-4">
-				<a
-					class="btn-primary"
-					href="mailto:kim@alliscalm.net"
-					target="_blank"
-					>Get in touch
-					<Icon height={20} name="mdi:email" />
-				</a>
-			</div>
-		</div>
-	</section>
+  <!-- About Section -->
+  <section class="app-container py-42 grid lg:grid-cols-2 gap-28 lg:gap-10">
+    <div class="space-y-6">
+      <h2 class="section-title">About Me</h2>
+      <p class="text-lg max-w-xl pb-4">
+        I'm Kim Foale, a technologist, sound artist, and community organiser
+        based in Manchester.
+      </p>
+      <a class="btn-secondary" href={`${SITE_BASE}/about`}
+        >Go to About
+        <Icon size={20} name="mdi:arrow-right" />
+      </a>
+    </div>
+    <div class="space-y-6">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="text-lg max-w-xl">
+        Find me on social media or get in touch via email.
+      </p>
+      <div class="flex flex-wrap mt-auto space-x-4">
+        <a class="btn-primary" href="mailto:kim@alliscalm.net" target="_blank"
+          >Get in touch
+          <Icon height={20} name="mdi:email" />
+        </a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
