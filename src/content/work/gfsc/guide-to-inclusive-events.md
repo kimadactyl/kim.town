@@ -2,6 +2,7 @@
 title: "The Trans Dimension Guide to Inclusive Events"
 description: "How we worked with Gendered Intelligence and the Greater Manchester Coalition of Disabled People to put together a zine about event accessibility from an intersectional perspective."
 year: 2022
+heroImage: "./images/guide-to-inclusive-events.jpg"
 tags: ["publication", "trans", "disability", "accessibility", "zine"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/guide-to-inclusive-events/"

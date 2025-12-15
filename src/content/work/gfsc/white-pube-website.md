@@ -2,6 +2,7 @@
 title: "The White Pube Website Overhaul"
 description: "How we helped The White Pube transition from an outdated and user-unfriendly Wix site to a properly structured and accessible static site, and learn basic web skills in the process."
 year: 2021
+heroImage: "./images/white-pube.png"
 tags: ["software", "education", "art", "digital-autonomy"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/white-pube-website-migration/"

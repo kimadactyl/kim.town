@@ -2,6 +2,7 @@
 title: 'Don''t trust "I Side With"'
 description: 'I''ve been pointed by a few people now towards I Side With as a policy guide. This site is extremely poorly sourced.'
 pubDate: 'May 15 2014'
+heroImage: './images/hero.jpg'
 tags: ['politics']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/dont-trust-i-side-with/'

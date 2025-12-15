@@ -2,6 +2,7 @@
 title: 'Fax'
 description: "We don't really see fax machines so much nowadays but they were a really magical and fun invention when I was a kid."
 pubDate: 'Jun 01 2023'
+heroImage: './images/hero.jpg'
 tags: ['reflection']
 source: 'kimtown'
 ---

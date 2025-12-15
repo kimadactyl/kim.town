@@ -2,6 +2,7 @@
 title: 'The First Eighteen Months of Running a Mastodon Server'
 description: "We are a small community tech studio doing mostly publicly funded community sector work. We've been running a Mastodon server since November 2022."
 pubDate: 'Jan 15 2024'
+heroImage: './images/hero.jpg'
 tags: ['fediverse']
 source: 'kimtown'
 ---

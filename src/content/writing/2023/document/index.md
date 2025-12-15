@@ -2,6 +2,7 @@
 title: 'Document'
 description: "Computers have been fully embedded into the operations of daily life for at least thirty years at this point. In this historically relatively short time they've utterly integrated into capitalism, but almost all our working metaphors are still based on physical things."
 pubDate: 'Sep 01 2023'
+heroImage: './images/hero.jpg'
 tags: ['reflection', 'history']
 source: 'kimtown'
 ---

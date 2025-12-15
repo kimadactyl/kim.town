@@ -2,6 +2,7 @@
 title: "Nextdoor Nature"
 description: "How we helped The Wildlife Trusts to create a community web resource to make it easier to 'take action for nature'."
 year: 2024
+heroImage: "./images/nextdoor-nature.jpg"
 tags: ["software", "environment", "community", "research"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/nextdoor-nature/"

@@ -2,6 +2,7 @@
 title: "The Trans Dimension"
 description: "An online community hub which connects trans communities across the UK by collating news, events and services by and for trans people in one easy-to-reach place."
 year: 2022
+heroImage: "./images/trans-dimension.png"
 tags: ["software", "community", "trans", "mutual-aid"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/trans-dimension/"

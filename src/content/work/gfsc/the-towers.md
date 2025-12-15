@@ -2,6 +2,7 @@
 title: "The Towers"
 description: "How we helped tell the story of two tower blocks in Oldham and the people who lived and worked there."
 year: 2023
+heroImage: "./images/the-towers.jpg"
 tags: ["local-history", "community", "heritage", "research"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/the-towers/"

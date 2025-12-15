@@ -2,6 +2,7 @@
 title: "Taphouse TV Dinners"
 description: "A COVID-19 mutual aid project distributing free hot meals in Hulme, Manchester, which has served over 7,000 meals to date."
 year: 2020
+heroImage: "./images/taphouse-tv-dinners.png"
 tags: ["mutual-aid", "community", "covid", "food"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/taphouse-tv-dinners/"

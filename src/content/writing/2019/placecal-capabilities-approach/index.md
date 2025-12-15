@@ -2,6 +2,7 @@
 title: 'PlaceCal and the Capabilities Approach'
 description: "We discuss how a capability approach to information technology in neighbourhoods with low social capital can create embedded and sustainable Community Technology Partnerships."
 pubDate: 'Jul 30 2019'
+heroImage: './images/hero.jpg'
 tags: ['placecal', 'methodology', 'community', 'research']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2019/placecal-capabilities-approach/'

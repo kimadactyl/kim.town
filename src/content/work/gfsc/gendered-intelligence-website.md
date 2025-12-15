@@ -2,6 +2,7 @@
 title: "Gendered Intelligence website and rebrand"
 description: "A full website migration and rebrand for the UK's largest trans charity, helping them support their users and administrate their workload more effectively."
 year: 2024
+heroImage: "./images/gendered-intelligence.png"
 tags: ["software", "design", "trans", "charity"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/gendered-intelligence-website/"

@@ -2,6 +2,7 @@
 title: "imok"
 description: "A simple bot to support people undertaking risky activities, created to support asylum seekers who are forced to 'sign on' at reporting centres."
 year: 2021
+heroImage: "./images/imok.jpg"
 tags: ["software", "mutual-aid", "asylum", "safety"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/imok/"

@@ -2,6 +2,7 @@
 title: "A Growing Threat to Life: Taser Usage by Greater Manchester Police"
 description: "How we helped Resistance Lab publish their first report documenting the intrinsic and potentially lethal threat posed by Taser in the hands of police in England and Wales."
 year: 2020
+heroImage: "./images/growing-threat-to-life.jpg"
 tags: ["research", "anti-racism", "publication", "data"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/growing-threat-to-life/"

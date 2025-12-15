@@ -2,6 +2,7 @@
 title: 'Go'
 description: "Go is my favourite board game. I got really into it in my 20s and was dedicated enough to go pretty regularly to an IRL group in a pub a fairly long bus ride away."
 pubDate: 'May 01 2023'
+heroImage: './images/hero.jpg'
 tags: ['games', 'personal']
 source: 'kimtown'
 ---

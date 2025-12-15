@@ -2,6 +2,7 @@
 title: 'Publishing PhD theses'
 description: 'PhDs take years, are an "original contribution to knowledge", and are generally paid for by the taxpayer.'
 pubDate: 'Jun 12 2014'
+heroImage: './images/hero.jpg'
 tags: ['research']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/publishing-phd-theses/'

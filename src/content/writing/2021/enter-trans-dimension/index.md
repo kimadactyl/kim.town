@@ -2,6 +2,7 @@
 title: 'Enter... The Trans Dimension!'
 description: "A new space for trans community enabled by technology and collaboration. We're really proud to finally launch The Trans Dimension, a new online community hub connecting trans communities across the UK."
 pubDate: 'Jun 28 2021'
+heroImage: './images/hero.jpg'
 tags: ['trans', 'placecal']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2021/enter-trans-dimension/'
