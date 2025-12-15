@@ -5,6 +5,7 @@ year: 2014
 tags: ["sound", "art", "video", "perception", "listening"]
 source: "personal"
 sourceUrl: "https://alliscalm.net/elephants-in-the-dark/"
+liveUrl: "https://kimadactyl.github.io/kim.town-v2/elephants-in-the-dark"
 heroImage: "./images/hero.jpg"
 role: "Creator"
 ---
@@ -37,5 +38,3 @@ The audio was prioritised over video quality - reversing typical amateur product
 5. **Mancunian Way** - traffic on Manchester's urban motorway
 6. **Radio** - detuned static between stations
 7. **Etherow Weir** - water flowing at the park in Stockport
-
-[Experience the piece →](/kim.town-v2/elephants-in-the-dark)
