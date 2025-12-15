@@ -1,0 +1,116 @@
+---
+import { getCollection } from "astro:content";
+import WorkCard from "../../components/WorkCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const works = (await getCollection("work")).sort(
+  (a, b) => b.data.year - a.data.year
+);
+
+// Extract unique sources with counts
+const sourceCounts = works.reduce(
+  (acc, work) => {
+    const source = work.data.source || "other";
+    acc[source] = (acc[source] || 0) + 1;
+    return acc;
+  },
+  {} as Record<string, number>
+);
+
+const sources = Object.entries(sourceCounts)
+  .map(([name, count]) => ({ name, count }))
+  .sort((a, b) => b.count - a.count);
+---
+
+<BaseLayout>
+  <main class="app-container pt-36">
+    <h1 class="text-6xl pb-4 font-bold">Work</h1>
+    <p class="md:w-2/3 text-lg leading-[2rem] opacity-80">
+      A portfolio of projects, experiments, and collaborations spanning art, technology, research, and social change.
+    </p>
+  </main>
+
+  <section class="app-container py-8">
+    {/* Filter by source */}
+    {sources.length > 1 && (
+      <div class="flex flex-wrap gap-2 mb-8 pb-6 border-b border-foreground/10 dark:border-foreground-dark/10">
+        <button
+          data-filter="all"
+          class="filter-btn active px-3 py-1.5 text-sm rounded-full border border-foreground/20 dark:border-foreground-dark/20 hover:bg-foreground/5 dark:hover:bg-foreground-dark/5 transition-colors"
+        >
+          All ({works.length})
+        </button>
+        {sources.map(({ name, count }) => (
+          <button
+            data-filter={name}
+            class="filter-btn px-3 py-1.5 text-sm rounded-full border border-foreground/20 dark:border-foreground-dark/20 hover:bg-foreground/5 dark:hover:bg-foreground-dark/5 transition-colors"
+          >
+            {name} ({count})
+          </button>
+        ))}
+      </div>
+    )}
+
+    {/* Works grid */}
+    <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+      {works.map((work) => (
+        <li
+          data-source={work.data.source || "other"}
+          class="work-item"
+        >
+          <WorkCard work={work} />
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
+
+<script>
+  function setupFilters() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const workItems = document.querySelectorAll('.work-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Update active state
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Filter items
+        workItems.forEach(item => {
+          const source = item.getAttribute('data-source');
+          if (filter === 'all' || source === filter) {
+            (item as HTMLElement).style.display = '';
+            (item as HTMLElement).style.opacity = '1';
+          } else {
+            (item as HTMLElement).style.opacity = '0';
+            setTimeout(() => {
+              (item as HTMLElement).style.display = 'none';
+            }, 200);
+          }
+        });
+      });
+    });
+  }
+
+  setupFilters();
+  document.addEventListener('astro:after-swap', setupFilters);
+</script>
+
+<style>
+  .filter-btn.active {
+    background: var(--color-foreground);
+    color: var(--color-background);
+  }
+
+  :global(.dark) .filter-btn.active {
+    background: var(--color-foreground-dark);
+    color: var(--color-background-dark);
+  }
+
+  .work-item {
+    transition: opacity 0.2s ease-out;
+  }
+</style>
