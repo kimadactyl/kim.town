@@ -1,0 +1,295 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import type { MarkdownHeading } from 'astro'
+import TableOfContents from '../components/TableOfContents.astro'
+import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
+
+dayjs.extend(utc)
+
+type Props = CollectionEntry<'work'>['data'] & {
+	headings: MarkdownHeading[]
+	slug: string
+	remarkPluginFrontmatter: Record<string, string>
+}
+
+const {
+	title,
+	description,
+	year,
+	heroImage,
+	coverImageCredit,
+	headings,
+	remarkPluginFrontmatter,
+	source,
+	role,
+	client,
+	sourceUrl,
+	liveUrl,
+	githubUrl,
+	tags,
+} = Astro.props
+
+import BaseLayout from './BaseLayout.astro'
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+
+const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
+	.utc()
+	.format('D MMM YYYY')
+
+// Extract domain from URL for display
+const getDomain = (url: string) => {
+	try {
+		return new URL(url).hostname.replace('www.', '')
+	} catch {
+		return ''
+	}
+}
+---
+
+<BaseLayout title={title} description={description}>
+	<main>
+		<article>
+			<!-- Hero Section -->
+			{heroImage ? (
+				<header class="hero-header relative w-full min-h-[50vh] md:min-h-[65vh] flex items-end overflow-hidden">
+					<div class="hero-image-wrapper absolute inset-0">
+						<Image
+							src={heroImage}
+							alt={title}
+							class="w-full h-full object-cover"
+							widths={[640, 960, 1280, 1920]}
+							sizes="100vw"
+						/>
+						<div class="hero-overlay absolute inset-0"></div>
+					</div>
+					<div class="hero-content relative z-10 w-full pb-12 pt-32 md:pb-16 md:pt-48">
+						<div class="app-container">
+							<div class="max-w-4xl">
+								<div class="hero-meta flex items-center gap-4 mb-4 text-white/80 text-sm">
+									<span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full font-medium">
+										{year}
+									</span>
+									{source && (
+										<span class="uppercase tracking-wider">{source}</span>
+									)}
+								</div>
+								<h1 class="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
+									{title}
+								</h1>
+								<div class="hero-details flex items-center gap-6 flex-wrap text-white/90 text-sm md:text-base">
+									{role && (
+										<span class="flex items-center gap-2">
+											<Icon name="mdi:account-outline" class="w-5 h-5" />
+											{role}
+										</span>
+									)}
+									{client && (
+										<span class="flex items-center gap-2">
+											<Icon name="mdi:domain" class="w-5 h-5" />
+											{client}
+										</span>
+									)}
+									<span class="flex items-center gap-2">
+										<Icon name="mdi:clock-time-four-outline" class="w-5 h-5" />
+										{remarkPluginFrontmatter.minutesRead}
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					{coverImageCredit && (
+						<p class="absolute bottom-3 right-4 text-white/60 text-xs italic z-10">
+							{coverImageCredit}
+						</p>
+					)}
+				</header>
+			) : (
+				<header class="pt-24 pb-8 md:pt-32 md:pb-12">
+					<div class="app-container">
+						<div class="max-w-4xl">
+							<div class="flex items-center gap-4 mb-4 text-sm">
+								<span class="bg-foreground/10 dark:bg-foreground-dark/10 px-3 py-1 rounded-full font-medium">
+									{year}
+								</span>
+								{source && (
+									<span class="uppercase tracking-wider opacity-60">{source}</span>
+								)}
+							</div>
+							<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
+								{title}
+							</h1>
+							<div class="flex items-center gap-6 flex-wrap text-foreground/70 dark:text-foreground-dark/70 text-sm md:text-base">
+								{role && (
+									<span class="flex items-center gap-2">
+										<Icon name="mdi:account-outline" class="w-5 h-5 text-primary dark:text-primary-dark" />
+										{role}
+									</span>
+								)}
+								{client && (
+									<span class="flex items-center gap-2">
+										<Icon name="mdi:domain" class="w-5 h-5 text-primary dark:text-primary-dark" />
+										{client}
+									</span>
+								)}
+								<span class="flex items-center gap-2">
+									<Icon name="mdi:clock-time-four-outline" class="w-5 h-5 text-primary dark:text-primary-dark" />
+									{remarkPluginFrontmatter.minutesRead}
+								</span>
+							</div>
+						</div>
+					</div>
+				</header>
+			)}
+
+			<!-- Project Links Bar -->
+			{(liveUrl || githubUrl) && (
+				<div class="bg-foreground/5 dark:bg-foreground-dark/5 border-y border-foreground/10 dark:border-foreground-dark/10">
+					<div class="app-container py-4">
+						<div class="flex flex-wrap items-center gap-4">
+							{liveUrl && (
+								<a
+									href={liveUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="inline-flex items-center gap-2 px-4 py-2 bg-primary dark:bg-primary-dark text-background dark:text-background-dark rounded-lg font-medium text-sm hover:opacity-90 transition-opacity"
+								>
+									<Icon name="mdi:web" class="w-4 h-4" />
+									Visit {getDomain(liveUrl)}
+									<Icon name="mdi:arrow-top-right" class="w-3.5 h-3.5" />
+								</a>
+							)}
+							{githubUrl && (
+								<a
+									href={githubUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="inline-flex items-center gap-2 px-4 py-2 border border-foreground/20 dark:border-foreground-dark/20 rounded-lg font-medium text-sm hover:bg-foreground/5 dark:hover:bg-foreground-dark/5 transition-colors"
+								>
+									<Icon name="mdi:github" class="w-4 h-4" />
+									View on GitHub
+									<Icon name="mdi:arrow-top-right" class="w-3.5 h-3.5 opacity-50" />
+								</a>
+							)}
+						</div>
+					</div>
+				</div>
+			)}
+
+			<!-- Article Content -->
+			<div class="app-container flex flex-col lg:flex-row-reverse justify-between gap-8 py-12 md:py-16 relative">
+				<div class="md:w-1/4 relative">
+					<div class="sticky top-0 md:top-28 hidden lg:block">
+						<TableOfContents headings={headings} />
+
+						{/* Tags sidebar */}
+						{tags && tags.length > 0 && (
+							<div class="mt-8 pt-6 border-t border-foreground/10 dark:border-foreground-dark/10">
+								<h4 class="text-xs uppercase tracking-wider opacity-60 mb-3">Tags</h4>
+								<div class="flex flex-wrap gap-2">
+									{tags.map((tag: string) => (
+										<span class="text-xs px-2 py-1 bg-foreground/5 dark:bg-foreground-dark/10 rounded">
+											{tag}
+										</span>
+									))}
+								</div>
+							</div>
+						)}
+
+						{/* Links sidebar */}
+						<div class="mt-6 flex flex-col gap-2">
+							{sourceUrl && (
+								<a
+									href={sourceUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-sm flex items-center gap-2 text-primary dark:text-primary-dark hover:underline"
+								>
+									<Icon name="mdi:link-variant" class="w-4 h-4" />
+									GFSC project page
+								</a>
+							)}
+						</div>
+					</div>
+				</div>
+				<div class="grow w-full md:max-w-[75ch]">
+					<div
+						class="prose prose-neutral prose-lg md:prose-xl dark:prose-invert prose-img:rounded-xl prose-figure:text-center prose-img:mx-auto"
+					>
+						<slot />
+					</div>
+
+					{/* Last modified */}
+					<div class="flex justify-end mt-16 gap-4 flex-wrap italic">
+						<p class="opacity-70">
+							Last modified: {lastModified}
+						</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+</BaseLayout>
+
+<style>
+	.hero-header {
+		background: linear-gradient(135deg, #2d1f24 0%, #5e3538 100%);
+	}
+
+	.hero-overlay {
+		background: linear-gradient(
+			to top,
+			rgba(45, 31, 36, 0.95) 0%,
+			rgba(45, 31, 36, 0.7) 30%,
+			rgba(45, 31, 36, 0.3) 60%,
+			rgba(45, 31, 36, 0.1) 100%
+		);
+	}
+
+	.hero-image-wrapper img {
+		animation: heroZoom 20s ease-out forwards;
+	}
+
+	.hero-title {
+		animation: fadeSlideUp 0.8s ease-out both;
+	}
+
+	.hero-meta {
+		animation: fadeSlideUp 0.8s ease-out 0.1s both;
+	}
+
+	.hero-details {
+		animation: fadeSlideUp 0.8s ease-out 0.2s both;
+	}
+
+	@keyframes heroZoom {
+		from {
+			transform: scale(1.05);
+		}
+		to {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes fadeSlideUp {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	/* Reduce motion for accessibility */
+	@media (prefers-reduced-motion: reduce) {
+		.hero-image-wrapper img,
+		.hero-title,
+		.hero-meta,
+		.hero-details {
+			animation: none;
+		}
+	}
+</style>

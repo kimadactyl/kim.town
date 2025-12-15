@@ -1,0 +1,128 @@
+---
+title: "Elephants In The Dark"
+description: "An experiment in listening"
+year: 2014
+tags: ["sound", "video", "installation", "listening", "perception"]
+source: "personal"
+sourceUrl: "https://alliscalm.net/elephants-in-the-dark/"
+role: "Director"
+---
+
+### An experiment in listening by Dr. Kim Foale (2014)
+
+Play full screen, total duration 17'30". Refresh the browser to generate a new playlist.
+
+<div id="elephants" style={{margin: '2em auto', textAlign: 'center'}}></div>
+
+<details>
+<summary>Show Playlist</summary>
+<ol id="tracklist"></ol>
+</details>
+
+<script dangerouslySetInnerHTML={{__html: `
+// Get shufflin'
+function shuffle(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+};
+
+var videoids = [ "Rx-ohyAE_Is","ByYF1d2DZ_s","3bjVIh60A_k","JmPn1rFtZVY","u3WWHE8mGls","CijTn3w6V1g","bVVw4jrIIro","nJ0YSmecfoQ","tl5d4NEuzwM","ZV8r8sE8op4","eMR_RdlWWXs","kcpnVmf8Ey0","pc3hXHMAFPs","E1nqkqHW1Hw","9u7NSjZwqoY","zHI45RfoUD0","KtJumjnpRxg","vR-R3kp9wD4","bvnolH53gJ4","elBjK2Zkgmw","EsO4feCQ1z8","9dFBxS1jqGk","-1k5Min0WqQ","ADdc0vPZd5M","v6hAE6mnso4","GCeg1UCg_d4","YOuAdIJtz78","x07qm8l0N50","DAW9W-EnjnU","nS_dmpWBe8U","k2sK6lb_nfw","KhOSdxmWilQ","x5j_7hnzj7M","R7B5JVGwiBo","faPfcBbh31Y","zyKnqrNnn2Q","p0SOs-_0wuE","PVw5bKB9h8c","cB-iF9rSZdo","SALjvq8GhtU","R0wBsMGyjB4","ZdLm-jkPZQ0","adjuFY9e3jQ","FgIWVC_y-lI","tUiwllBTCW8","LwQYCSuC9I0","ygiSZxMQLkg","qHEY1LczX9k","YAHglV7QfVY"];
+
+var order = ["Formby Beach", "Computer Lab", "Hoovering", "Kettle", "Mancunian Way", "Radio", "Etherow Weir"];
+
+// Create arrays for us to pick our video from
+var audio = shuffle([0,1,2,3,4,5,6]);
+var video = shuffle([0,1,2,3,4,5,6]);
+var request = [];
+var tracklist = [];
+
+// Pick one element from each array, with video being the modulo 7 row index
+for (i = 0; i < 6; i++) {
+  tracklist[i] = "<strong>Video:</strong> " + order[video[i]] + ". <strong>Audio:</strong> " + order[audio[i]] + ".";
+  request[i] = videoids[(video[i] * 7) + (audio[i])];
+}
+
+// YouTube wants one video loaded initially, and the rest as an array
+firstvideo = request[0];
+playlist = request;
+
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('elephants', {
+    height: '480',
+    width: '853',
+    videoId: firstvideo,
+   suggestedQuality: 'large',
+    playerVars: { 'showinfo': 0, },
+    events: {
+      'onReady': onPlayerReady
+    },
+  })
+}
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.cuePlaylist(playlist);
+  populatePlaylist(tracklist);
+}
+
+function stopVideo() {
+  player.stopVideo();
+}
+
+// Grab the list element
+var list = document.getElementById("tracklist");
+
+// Populate on refresh
+function populatePlaylist(tracklist) {
+  if (!list) return;
+  list.innerHTML = '';
+  for(t = 0; t < tracklist.length; t++ ) {
+    li = document.createElement("li");
+    li.innerHTML = tracklist[t];
+    list.appendChild(li);
+  }
+}
+`}} />
+
+## Background
+
+It's commonly stated that all broadband, or "white" noise sources essentially sound the same to the human ear -- in other words, a main road is acoustically very similar to the sea, even though we generally consider one very stressful and the other relaxing. During my PhD research, I wondered to what extent this is true: and to what degree our eyes can fool our ears, and vice versa.
+
+This film consists of audio and video recordings of seven locations, played back in random combinations. These are: a kettle; the Mancunian Way; a weir at Etherow Park; Formby beach; a detuned radio; someone hoovering; and a computer lab at Salford University.
+
+Each entire playthrough takes 17 minutes 30 seconds. You can refresh the page to get new combinations. Play fullscreen, listen, tune in and out, put it on in the background: how does it change your experience of the audio? Does looking first, or listening first, make a difference? Even if you're sure what it is, can you convince your brain otherwise?
+
+Note there is no correct answer to any of these questions: I'd be delighted to hear what you think.
+
+## Credits and Thanks
+
+Originally produced for and premiered at *Be Live* at [The Penthouse](http://thepenthousenq.com/).
+
+- Dr. Kim Foale: Director, audio and video recording, code
+- Sylvia Kolling: Location spotter, key grip
+- Michael Roberts: Chauffer
+- Josh R: Camera loan
+- Nichola Hallet: Hooverist
+
+## Technical Notes
+
+Video was shot on a JVC DR-760, and audio recorded on a Tascam HD-P2 with a Pearl M&S stereo mic. I deliberately wanted the audio to be very high quality compared to the video, compared to most amateur video production where the reverse is true.
+
+Videos were edited in Sony Vegas, and audio using [Reaper](http://www.reaper.fm/). Audio and video batch processing was done using the [`sox`](http://sox.sourceforge.net/) and [`avconv`](https://libav.org/avconv.html) command-line tools.
+
+Initially I wanted to simply have seven videos and seven audio files and use JavaScript to combine them in the user's browser, however there is currently no code solution I can find that works reliably across the major operating systems (especially iOS) -- I tried Popcorn.js, the YouTube API, Mediaelement.js, and some custom ideas to no avail. Therefore all 49 possible permutations of audio and video are uploaded to YouTube. Suggestions to improve this more than welcome!

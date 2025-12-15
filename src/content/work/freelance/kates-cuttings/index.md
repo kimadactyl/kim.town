@@ -1,11 +1,13 @@
 ---
-title: 'Kate''s Cuttings'
-description: 'Kate has published a gardening column for a number of years, and had a large collection of photos from this period.'
-pubDate: 'Nov 18 2012'
-tags: ['web', 'client-work']
-source: 'alliscalm'
-sourceUrl: 'https://alliscalm.net/kates-cuttings/'
-heroImage: './images/kates-cuttings.png'
+title: "Kate's Cuttings"
+description: "Kate has published a gardening column for a number of years, and had a large collection of photos from this period."
+year: 2012
+tags: ["web", "drupal"]
+source: "freelance"
+sourceUrl: "https://alliscalm.net/kates-cuttings/"
+heroImage: "./images/kates-cuttings.png"
+role: "Developer"
+client: "Kate's Cuttings"
 ---
 
 Kate has published a gardening column for a number of years, and had a large collection of photos from this period. Having a lot of writing and photos gave a lot of scope for making a very immediately visual website.

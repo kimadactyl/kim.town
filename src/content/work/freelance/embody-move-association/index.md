@@ -1,11 +1,13 @@
 ---
-title: 'Embody Move Association'
-description: 'This project involved redesigning a website for Embody Move Association, a practitioner training organization.'
-pubDate: 'Sep 23 2013'
-tags: ['web', 'client-work']
-source: 'alliscalm'
-sourceUrl: 'https://alliscalm.net/embody-move-association/'
-heroImage: './images/embody-move-association-1.png'
+title: "Embody Move Association"
+description: "This project involved redesigning a website for Embody Move Association, a practitioner training organization."
+year: 2013
+tags: ["web", "drupal"]
+source: "freelance"
+sourceUrl: "https://alliscalm.net/embody-move-association/"
+heroImage: "./images/embody-move-association-1.png"
+role: "Developer"
+client: "Embody Move Association"
 ---
 
 This project involved redesigning a website for Embody Move Association, a practitioner training organization. The previous website was created five years earlier, and this remake incorporated new skills and approaches learned in the interim.

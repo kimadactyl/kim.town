@@ -1,11 +1,13 @@
 ---
-title: 'First National Festival of LGBT History'
-description: 'As Communications Director for the First National Festival of LGBT History, I built the website and authored all copy and communications.'
-pubDate: 'Mar 01 2015'
-tags: ['history', 'organizing', 'web', 'client-work', 'mutual-aid']
-source: 'alliscalm'
-sourceUrl: 'https://alliscalm.net/first-national-festival-of-lgbt-history/'
-heroImage: './images/Screenshot-from-2016-06-30-15-42-48.png'
+title: "First National Festival of LGBT History"
+description: "As Communications Director for the First National Festival of LGBT History, I built the website and authored all copy and communications."
+year: 2015
+tags: ["web", "lgbtq", "history", "organizing"]
+source: "freelance"
+sourceUrl: "https://alliscalm.net/first-national-festival-of-lgbt-history/"
+heroImage: "./images/Screenshot-from-2016-06-30-15-42-48.png"
+role: "Communications Director & Developer"
+client: "LGBT History Festival"
 ---
 
 As Communications Director for the First National Festival of LGBT History, I built the website and authored all copy and communications. This volunteer position consumed considerable free time for approximately one year.

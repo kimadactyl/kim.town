@@ -1,0 +1,37 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content'
+import WorkLayout from '../../layouts/WorkLayout.astro'
+import type { MarkdownHeading } from 'astro'
+
+export async function getStaticPaths() {
+	const works = await getCollection('work')
+	const renderedWorks = await Promise.all(
+		works.map(async (work) => {
+			const { headings } = await render(work)
+			return { work, headings }
+		})
+	)
+	return renderedWorks.map(({ work, headings }) => ({
+		params: { slug: work.id },
+		props: { work, headings, slug: work.id },
+	}))
+}
+
+type Props = {
+	work: CollectionEntry<'work'>
+	headings: MarkdownHeading[]
+	slug: string
+}
+
+const { work, headings, slug } = Astro.props
+const { Content, remarkPluginFrontmatter } = await render(work)
+---
+
+<WorkLayout
+	{...work.data}
+	headings={headings}
+	slug={slug}
+	remarkPluginFrontmatter={remarkPluginFrontmatter}
+>
+	<Content />
+</WorkLayout>

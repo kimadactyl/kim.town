@@ -1,0 +1,92 @@
+---
+import { SITE_BASE } from '@/consts'
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+
+const { work } = Astro.props
+
+// All work items link to internal detail pages
+const href = `${SITE_BASE}/work/${work.id}/`
+
+// Show indicator if there's a live site
+const hasLiveUrl = !!work.data.liveUrl
+---
+
+<a
+	href={href}
+	class="work-card group relative flex flex-col h-full"
+>
+	{/* Image container with overlay */}
+	<div class="relative overflow-hidden aspect-[4/3] bg-foreground/5 dark:bg-foreground-dark/5">
+		{work.data.heroImage ? (
+			<Image
+				src={work.data.heroImage}
+				alt={work.data.title}
+				class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+			/>
+		) : (
+			<div class="w-full h-full flex items-center justify-center">
+				<Icon name="mdi:palette-outline" class="w-16 h-16 opacity-20" />
+			</div>
+		)}
+
+		{/* Hover overlay */}
+		<div class="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/40 to-transparent dark:from-background-dark/95 dark:via-background-dark/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+			<p class="text-background dark:text-foreground-dark text-sm line-clamp-3 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+				{work.data.description}
+			</p>
+		</div>
+
+		{/* Year badge */}
+		<div class="absolute top-3 left-3 bg-background/90 dark:bg-background-dark/90 backdrop-blur-sm px-2.5 py-1 text-xs font-medium tracking-wide">
+			{work.data.year}
+		</div>
+
+		{/* Live site indicator */}
+		{hasLiveUrl && (
+			<div class="absolute top-3 right-3 bg-green-600/90 text-white px-2.5 py-1 text-xs font-medium tracking-wide flex items-center gap-1.5">
+				<Icon name="mdi:web" class="w-3 h-3" />
+				Live
+			</div>
+		)}
+	</div>
+
+	{/* Content */}
+	<div class="flex flex-col gap-2 py-4">
+		<h3 class="text-lg font-semibold leading-snug group-hover:text-primary dark:group-hover:text-primary-dark transition-colors">
+			{work.data.title}
+		</h3>
+
+		<div class="flex items-center gap-3 text-xs opacity-60 flex-wrap">
+			{work.data.client && (
+				<span class="flex items-center gap-1">
+					<Icon name="mdi:domain" class="w-3.5 h-3.5" />
+					{work.data.client}
+				</span>
+			)}
+			{work.data.source && (
+				<span class="uppercase tracking-wider">{work.data.source}</span>
+			)}
+		</div>
+
+		{work.data.tags && work.data.tags.length > 0 && (
+			<div class="flex flex-wrap gap-1.5 mt-1">
+				{work.data.tags.slice(0, 3).map((tag: string) => (
+					<span class="text-[10px] uppercase tracking-wider px-2 py-0.5 bg-foreground/5 dark:bg-foreground-dark/10 rounded">
+						{tag}
+					</span>
+				))}
+			</div>
+		)}
+	</div>
+</a>
+
+<style>
+	.work-card {
+		transition: transform 0.3s ease;
+	}
+
+	.work-card:hover {
+		transform: translateY(-4px);
+	}
+</style>

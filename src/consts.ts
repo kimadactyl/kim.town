@@ -30,6 +30,10 @@ export const WebsiteLinks = [
 		url: 'writing',
 	},
 	{
+		name: 'Work',
+		url: 'work',
+	},
+	{
 		name: 'About',
 		url: 'about',
 	},
