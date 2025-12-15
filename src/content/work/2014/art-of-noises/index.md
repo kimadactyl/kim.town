@@ -37,7 +37,7 @@ To make your own copy, simply print off the rules and cardsheet below. I recomme
 
 ## Buy a copy?
 
-I have a limited run of five copies for sale. Each copy contains 192 cards, and is in a hand-made, embroidered bag. Please email [kim@alliscalm.net](mailto:kim@alliscalm.net) if you're interested.
+I have a limited run of five copies for sale. Each copy contains 192 cards, and is in a hand-made, embroidered bag. Please email [kim@gfsc.studio](mailto:kim@gfsc.studio) if you're interested.
 
 They are £25 plus postage and packing. Please note you need to supply your own instruments!
 
