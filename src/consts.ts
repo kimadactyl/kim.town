@@ -11,12 +11,20 @@ export const SITE_BASE = '/kim.town-v2'
 
 export const SocialLinks = [
 	{
+		name: 'Mastodon',
+		url: 'https://social.coop/@kim',
+	},
+	{
+		name: 'LinkedIn',
+		url: 'https://www.linkedin.com/in/dr-kim-foale/',
+	},
+	{
 		name: 'GitHub',
 		url: 'https://github.com/kimadactyl',
 	},
-	{
-		name: 'Mastodon',
-		url: 'https://social.coop/@kim',
+		{
+		name: 'Bluesky',
+		url: 'https://bsky.app/profile/kim.town',
 	},
 ]
 

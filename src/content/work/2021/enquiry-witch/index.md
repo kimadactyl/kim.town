@@ -2,7 +2,7 @@
 title: "EnquiryWitch"
 description: "A pseudo-chatbot built on Twine that streamlines website communications, helping organisations respond to enquiries faster and minimise pressure on volunteers and employees."
 year: 2021
-heroImage: "./images/enquiry-witch.png"
+heroImage: "./images/hero.png"
 tags: ["software", "tooling", "charity", "communications"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/enquiry-witch/"

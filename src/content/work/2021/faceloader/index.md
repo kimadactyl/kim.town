@@ -2,7 +2,7 @@
 title: "Faceloader"
 description: "How we developed a tool to help event organisers break free of the siloed Facebook ecosystem, and share their events in more accessible and user-friendly calendar formats."
 year: 2021
-heroImage: "./images/faceloader.jpg"
+heroImage: "./images/hero.jpg"
 tags: ["software", "digital-autonomy", "tooling", "facebook"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/faceloader/"

@@ -2,7 +2,7 @@
 title: "PlaceCal"
 description: "An award winning community calendar system, designed to combat loneliness and isolation in neighbourhoods across the UK and beyond."
 year: 2017
-heroImage: "./images/placecal.png"
+heroImage: "./images/hero.png"
 tags: ["software", "community", "health", "digital-inclusion", "mutual-aid"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/placecal/"

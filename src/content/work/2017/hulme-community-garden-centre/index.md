@@ -2,7 +2,7 @@
 title: "Hulme Community Garden Centre website consultancy"
 description: "How we researched Hulme Community Garden Centre's tech needs, and provided them with a package of information and user stories which set them up to develop their perfect website."
 year: 2017
-heroImage: "./images/hulme-community-garden-centre.jpg"
+heroImage: "./images/hero.jpg"
 tags: ["consultancy", "community", "environment", "research"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/hulme-community-garden-centre/"

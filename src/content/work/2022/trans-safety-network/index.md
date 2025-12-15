@@ -2,7 +2,7 @@
 title: "Trans Safety Network Website and Rebrand"
 description: "How we rebranded Trans Safety Network and helped them instil trust in their high quality journalistic reporting."
 year: 2022
-heroImage: "./images/trans-safety-network.png"
+heroImage: "./images/hero.png"
 tags: ["design", "trans", "journalism", "research"]
 source: "gfsc"
 sourceUrl: "https://gfsc.studio/project/trans-safety-network/"
