@@ -21,10 +21,19 @@ The game is available under a [Creative Commons BY-NC-SA license](http://creativ
 
 ## Downloads
 
-- [Rules [pdf]](https://www.scribd.com/doc/284831692/Art-of-Noises-Rules)
-- [Cardsheet [pdf]](https://www.scribd.com/doc/284831686/Art-of-Noises-Cardsheet)
+To make your own copy, simply print off the rules and cardsheet below. I recommend printing the cardsheet on thin card, and the rules double sided if possible!
 
-To make your own copy, simply print off the rules and cardsheet above. I recommend printing the cardsheet on thin card, and the rules double sided if possible!
+### Rules
+
+<iframe src="/kim.town-v2/downloads/rules.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+
+[Download Rules PDF](/kim.town-v2/downloads/rules.pdf)
+
+### Cardsheet
+
+<iframe src="/kim.town-v2/downloads/cardsheet.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+
+[Download Cardsheet PDF](/kim.town-v2/downloads/cardsheet.pdf)
 
 ## Buy a copy?
 
