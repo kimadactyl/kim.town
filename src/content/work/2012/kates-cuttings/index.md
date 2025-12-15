@@ -5,6 +5,7 @@ year: 2012
 tags: ["web", "drupal"]
 source: "freelance"
 sourceUrl: "https://alliscalm.net/kates-cuttings/"
+liveUrl: "https://katescuttings.net/"
 heroImage: "./images/kates-cuttings.png"
 role: "Developer"
 client: "Kate's Cuttings"

@@ -8,8 +8,9 @@ const { work } = Astro.props
 // All work items link to internal detail pages
 const href = `${SITE_BASE}/work/${work.id}/`
 
-// Show indicator if there's a live site
+// Show indicator if there's a live site or if retired
 const hasLiveUrl = !!work.data.liveUrl
+const isRetired = !!work.data.retired
 ---
 
 <a
@@ -42,8 +43,13 @@ const hasLiveUrl = !!work.data.liveUrl
 			{work.data.year}
 		</div>
 
-		{/* Live site indicator */}
-		{hasLiveUrl && (
+		{/* Live/Retired site indicator */}
+		{isRetired ? (
+			<div class="absolute top-3 right-3 bg-foreground/60 dark:bg-foreground-dark/60 text-background dark:text-background-dark px-2.5 py-1 text-xs font-medium tracking-wide flex items-center gap-1.5">
+				<Icon name="mdi:archive-outline" class="w-3 h-3" />
+				Retired
+			</div>
+		) : hasLiveUrl && (
 			<div class="absolute top-3 right-3 bg-green-600/90 text-white px-2.5 py-1 text-xs font-medium tracking-wide flex items-center gap-1.5">
 				<Icon name="mdi:web" class="w-3 h-3" />
 				Live

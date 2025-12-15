@@ -1,6 +1,6 @@
 ---
-title: "A Listener-Centered Approach to Soundscape Analysis"
-description: "PhD thesis reexamining soundscape through a listener-focused lens rather than emphasizing environmental characteristics"
+title: "PhD thesis: A Listener-Centered Approach to Soundscape Analysis"
+description: "Reexamining soundscape through a listener-focused lens rather than emphasizing environmental characteristics"
 year: 2014
 tags: ["sound", "research", "listening", "perception", "urban"]
 source: "academic"

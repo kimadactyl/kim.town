@@ -8,6 +8,7 @@ sourceUrl: "https://alliscalm.net/tai-chi-school/"
 heroImage: "./images/Screenshot-from-2016-06-30-14-27-09.png"
 role: "Developer"
 client: "Personal Project"
+retired: true
 ---
 
 Beta website for my own business, Tai Chi School, offering online Tai Chi instruction. After completing numerous client projects, I welcomed the opportunity to work on a personal venture.

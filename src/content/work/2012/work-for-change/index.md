@@ -8,6 +8,7 @@ sourceUrl: "https://alliscalm.net/work-for-change/"
 heroImage: "./images/workforchange.png"
 role: "Developer"
 client: "Work for Change"
+retired: true
 ---
 
 Work For Change is a co-op office complex. They had an existing website that wasn't getting them any Google hits for local keywords (the name of the theater, the workspace itself), and sprawled over about 20 pages even though there was very little information.

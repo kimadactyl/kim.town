@@ -8,6 +8,7 @@ sourceUrl: "https://alliscalm.net/embody-move-association/"
 heroImage: "./images/embody-move-association-1.png"
 role: "Developer"
 client: "Embody Move Association"
+retired: true
 ---
 
 This project involved redesigning a website for Embody Move Association, a practitioner training organization. The previous website was created five years earlier, and this remake incorporated new skills and approaches learned in the interim.

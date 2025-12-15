@@ -47,6 +47,8 @@ const work = defineCollection({
 			role: z.string().optional(),
 			// Client or collaborator
 			client: z.string().optional(),
+			// Whether this project is no longer live/maintained
+			retired: z.boolean().optional(),
 		}),
 });
 

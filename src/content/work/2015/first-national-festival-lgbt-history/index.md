@@ -5,6 +5,7 @@ year: 2015
 tags: ["web", "lgbtq", "history", "organizing"]
 source: "freelance"
 sourceUrl: "https://alliscalm.net/first-national-festival-of-lgbt-history/"
+liveUrl: "http://lgbthistoryfestival.org/"
 heroImage: "./images/Screenshot-from-2016-06-30-15-42-48.png"
 role: "Communications Director & Developer"
 client: "LGBT History Festival"
