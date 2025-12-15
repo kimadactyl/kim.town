@@ -9,6 +9,8 @@ sourceUrl: "https://alliscalm.net/art-of-noises/"
 role: "Creator"
 ---
 
+import DownloadButton from '@/components/DownloadButton.astro';
+
 ### A game exploring how we communicate using sounds by Dr Kim Foale (2014)
 
 Art Of Noises is a game of abstract musical performance for 3-5 people. Players take the role of avant-garde performers, attempting to communicate various nouns, verbs and adjectives using a variety of toy instruments. Each player takes it in turn to select a card and perform the word on it. The other players guess which word is being performed. At the end of the game, the person with the most points wins, and is declared the most avant-garde.
@@ -25,21 +27,15 @@ To make your own copy, simply print off the rules and cardsheet below. I recomme
 
 ### Rules
 
-<iframe src="/kim.town-v2/downloads/rules.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+<iframe src="/kim.town-v2/downloads/rules.pdf" width="100%" height="600px" style={{border: '1px solid #ccc', borderRadius: '8px'}}></iframe>
 
-<a href="/kim.town-v2/downloads/rules.pdf" download style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: #5e3538; color: white; text-decoration: none; border-radius: 6px; font-weight: 500; margin-top: 1rem;">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-  Download Rules (PDF, 123KB)
-</a>
+<DownloadButton href="/kim.town-v2/downloads/rules.pdf" filename="Rules" size="123KB" />
 
 ### Cardsheet
 
-<iframe src="/kim.town-v2/downloads/cardsheet.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+<iframe src="/kim.town-v2/downloads/cardsheet.pdf" width="100%" height="600px" style={{border: '1px solid #ccc', borderRadius: '8px'}}></iframe>
 
-<a href="/kim.town-v2/downloads/cardsheet.pdf" download style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: #5e3538; color: white; text-decoration: none; border-radius: 6px; font-weight: 500; margin-top: 1rem;">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-  Download Cardsheet (PDF, 6.6MB)
-</a>
+<DownloadButton href="/kim.town-v2/downloads/cardsheet.pdf" filename="Cardsheet" size="6.6MB" />
 
 ## Buy a copy?
 
