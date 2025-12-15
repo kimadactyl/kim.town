@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_BASE, SocialLinks } from "../consts";
 import { Icon } from "astro-icon/components";
 import BlogCard from "../components/BlogCard.astro";
+import WorkCard from "../components/WorkCard.astro";
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
 import kimPortrait from "../assets/kim-portrait.jpeg";
@@ -10,6 +11,10 @@ import kimPortrait from "../assets/kim-portrait.jpeg";
 const posts = (await getCollection("writing"))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 6);
+
+const works = (await getCollection("work"))
+  .sort((a, b) => b.data.year - a.data.year)
+  .slice(0, 3);
 ---
 
 <BaseLayout>
@@ -50,14 +55,26 @@ const posts = (await getCollection("writing"))
     </div>
   </main>
 
-  <!-- Recent Posts Section -->
+  <!-- Recent Work Section -->
   <section class="app-container">
-    <h2 class="section-title">Recent Posts</h2>
+    <h2 class="section-title">Recent Work</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {works.map((work) => <WorkCard work={work} />)}
+    </div>
+    <a class="btn-secondary" href={`${SITE_BASE}/work`}
+      >View All Work
+      <Icon size={20} name="mdi:arrow-right" />
+    </a>
+  </section>
+
+  <!-- Recent Writing Section -->
+  <section class="app-container">
+    <h2 class="section-title">Recent Writing</h2>
     <div class="posts-grid-container">
       {posts.map((post) => <BlogCard post={post} />)}
     </div>
     <a class="btn-secondary" href={`${SITE_BASE}/writing`}
-      >Read All
+      >Read All Writing
       <Icon size={20} name="mdi:arrow-right" />
     </a>
   </section>
