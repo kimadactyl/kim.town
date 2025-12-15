@@ -2,7 +2,7 @@
 title: "The Ladder of Citizen Participation"
 description: "There's a lot of discussion about co-production, co-design and other impressive-sounding terms starting with 'co-' at the moment in tech circles. This article revisits Arnstein's 'Ladder of Citizen Participation'."
 pubDate: 'Sep 16 2019'
-heroImage: './images/hero.jpg'
+heroImage: './images/hero.png'
 tags: ['methodology']
 source: 'gfsc'
 externalUrl: 'https://gfsc.studio/blog/2019/ladder-citizen-participation/'
