@@ -1,0 +1,538 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Elephants in the Dark"
+  description="A sound art piece exploring how our eyes can fool our ears, and vice versa."
+>
+  <main class="elephants-container">
+    <header class="elephants-header">
+      <h1>Elephants in the Dark</h1>
+      <p class="subtitle">An experiment in listening by Dr. Kim Foale (2014)</p>
+    </header>
+
+    <div class="player-wrapper">
+      <div id="player-container">
+        <div id="player"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="toggle-info" class="info-toggle" title="Show what's playing">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="1.5"></circle>
+          <path
+            d="M12 16v-4M12 8h.01"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="now-playing-panel" class="now-playing-panel hidden">
+      <div class="now-playing">
+        <span class="label">Now playing</span>
+        <span id="current-combo" class="combo">—</span>
+      </div>
+      <div class="tracklist">
+        <ol id="tracklist-items"></ol>
+      </div>
+    </div>
+
+    <div class="info-panel">
+      <p>
+        This piece plays audio and video recordings of seven locations in random
+        combinations: a kettle, the Mancunian Way, Etherow Park weir, Formby
+        beach, radio static, hoovering, and a computer lab. Each session creates
+        a unique experience from 49 possible pairings.
+      </p>
+      <p class="refresh-hint">Refresh the page for a new random sequence.</p>
+      <a href="/work/2014/elephants-in-the-dark" class="back-link"
+        >← About this work</a
+      >
+    </div>
+  </main>
+</BaseLayout>
+
+<style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap");
+
+  .elephants-container {
+    min-height: 100vh;
+    background: #0a0a0a;
+    color: #e8e4df;
+    padding: 2rem;
+    font-family: "EB Garamond", Georgia, serif;
+  }
+
+  .elephants-header {
+    text-align: center;
+    padding: 4rem 0 2rem;
+  }
+
+  .elephants-header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin: 0;
+    color: #f5f2ed;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #8a8580;
+    margin-top: 0.75rem;
+    font-style: italic;
+  }
+
+  .player-wrapper {
+    max-width: 960px;
+    margin: 2rem auto;
+  }
+
+  #player-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    background: #111;
+    border: 1px solid #222;
+    overflow: hidden;
+  }
+
+  #player-container iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  #player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .controls {
+    max-width: 960px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-toggle {
+    background: transparent;
+    border: 1px solid #333;
+    color: #6a6560;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-toggle:hover {
+    border-color: #555;
+    color: #c9b99a;
+  }
+
+  .info-toggle.active {
+    background: #1a1a1a;
+    border-color: #c9b99a;
+    color: #c9b99a;
+  }
+
+  .now-playing-panel {
+    max-width: 960px;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease;
+    max-height: 600px;
+    opacity: 1;
+  }
+
+  .now-playing-panel.hidden {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .now-playing {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+
+  .now-playing .label {
+    font-size: 0.85rem;
+    color: #6a6560;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .now-playing .combo {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.95rem;
+    color: #c9b99a;
+  }
+
+  .tracklist {
+    margin: 0;
+  }
+
+  .tracklist ol {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    border-top: 1px solid #222;
+  }
+
+  .tracklist li {
+    padding: 0.75rem 1rem;
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.85rem;
+    color: #6a6560;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .tracklist li:hover {
+    background: #111;
+  }
+
+  .tracklist li.playing {
+    color: #f5f2ed;
+    background: #151515;
+  }
+
+  .tracklist li.playing .track-num {
+    color: #c9b99a;
+  }
+
+  .track-num {
+    color: #444;
+  }
+
+  .track-video,
+  .track-audio {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .track-video::before {
+    content: "👁";
+    font-size: 0.75rem;
+  }
+
+  .track-audio::before {
+    content: "👂";
+    font-size: 0.75rem;
+  }
+
+  .info-panel {
+    max-width: 640px;
+    margin: 3rem auto;
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #222;
+  }
+
+  .info-panel p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #8a8580;
+    margin: 0 0 1rem;
+  }
+
+  .refresh-hint {
+    font-style: italic;
+    font-size: 0.95rem !important;
+    color: #5a5550 !important;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #c9b99a;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+  }
+
+  .back-link:hover {
+    color: #e8d9b9;
+  }
+
+  @media (max-width: 640px) {
+    .elephants-container {
+      padding: 1rem;
+    }
+
+    .elephants-header {
+      padding: 2rem 0 1rem;
+    }
+
+    .tracklist li {
+      grid-template-columns: 1.5rem 1fr;
+      gap: 0.5rem;
+    }
+
+    .track-audio {
+      grid-column: 2;
+    }
+
+    .now-playing {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  }
+</style>
+
+<script>
+  // YouTube IFrame API types
+  declare namespace YT {
+    class Player {
+      constructor(elementId: string, options: PlayerOptions);
+      cuePlaylist(playlist: string[]): void;
+      playVideo(): void;
+      getPlaylistIndex(): number;
+    }
+    interface PlayerOptions {
+      height?: string;
+      width?: string;
+      playerVars?: PlayerVars;
+      events?: PlayerEvents;
+    }
+    interface PlayerVars {
+      autoplay?: number;
+      controls?: number;
+      rel?: number;
+      modestbranding?: number;
+      iv_load_policy?: number;
+      disablekb?: number;
+      fs?: number;
+      playsinline?: number;
+    }
+    interface PlayerEvents {
+      onReady?: (event: PlayerEvent) => void;
+      onStateChange?: (event: OnStateChangeEvent) => void;
+    }
+    interface PlayerEvent {
+      target: Player;
+    }
+    interface OnStateChangeEvent {
+      data: number;
+      target: Player;
+    }
+    const PlayerState: {
+      PLAYING: number;
+      PAUSED: number;
+      ENDED: number;
+    };
+  }
+
+  // Video IDs array - 49 combinations (7 videos × 7 audio tracks)
+  const videoIds = [
+    "Rx-ohyAE_Is",
+    "ByYF1d2DZ_s",
+    "3bjVIh60A_k",
+    "JmPn1rFtZVY",
+    "u3WWHE8mGls",
+    "CijTn3w6V1g",
+    "bVVw4jrIIro",
+    "nJ0YSmecfoQ",
+    "tl5d4NEuzwM",
+    "ZV8r8sE8op4",
+    "eMR_RdlWWXs",
+    "kcpnVmf8Ey0",
+    "pc3hXHMAFPs",
+    "E1nqkqHW1Hw",
+    "9u7NSjZwqoY",
+    "zHI45RfoUD0",
+    "KtJumjnpRxg",
+    "vR-R3kp9wD4",
+    "bvnolH53gJ4",
+    "elBjK2Zkgmw",
+    "EsO4feCQ1z8",
+    "9dFBxS1jqGk",
+    "-1k5Min0WqQ",
+    "ADdc0vPZd5M",
+    "v6hAE6mnso4",
+    "GCeg1UCg_d4",
+    "YOuAdIJtz78",
+    "x07qm8l0N50",
+    "DAW9W-EnjnU",
+    "nS_dmpWBe8U",
+    "k2sK6lb_nfw",
+    "KhOSdxmWilQ",
+    "x5j_7hnzj7M",
+    "R7B5JVGwiBo",
+    "faPfcBbh31Y",
+    "zyKnqrNnn2Q",
+    "p0SOs-_0wuE",
+    "PVw5bKB9h8c",
+    "cB-iF9rSZdo",
+    "SALjvq8GhtU",
+    "R0wBsMGyjB4",
+    "ZdLm-jkPZQ0",
+    "adjuFY9e3jQ",
+    "FgIWVC_y-lI",
+    "tUiwllBTCW8",
+    "LwQYCSuC9I0",
+    "ygiSZxMQLkg",
+    "qHEY1LczX9k",
+    "YAHglV7QfVY",
+  ];
+
+  // Location names in order (indices 0-6)
+  const locations = [
+    "Formby Beach",
+    "Computer Lab",
+    "Hoovering",
+    "Kettle",
+    "Mancunian Way",
+    "Radio",
+    "Etherow Weir",
+  ];
+
+  // Fisher-Yates shuffle
+  function shuffle<T>(array: T[]): T[] {
+    const result = [...array];
+    for (let i = result.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+  }
+
+  // Generate playlist of 7 random combinations
+  function generatePlaylist() {
+    const videoIndices = shuffle([0, 1, 2, 3, 4, 5, 6]);
+    const audioIndices = shuffle([0, 1, 2, 3, 4, 5, 6]);
+
+    return videoIndices.map((videoIdx, i) => ({
+      videoId: videoIds[videoIdx * 7 + audioIndices[i]],
+      videoLocation: locations[videoIdx],
+      audioLocation: locations[audioIndices[i]],
+    }));
+  }
+
+  const playlist = generatePlaylist();
+  let currentTrack = 0;
+  let player: YT.Player;
+
+  // Populate tracklist UI
+  function populateTracklist() {
+    const tracklistEl = document.getElementById("tracklist-items");
+    if (!tracklistEl) return;
+
+    tracklistEl.innerHTML = playlist
+      .map(
+        (track, i) => `
+			<li data-track="${i}" class="${i === 0 ? "playing" : ""}">
+				<span class="track-num">${i + 1}</span>
+				<span class="track-video">${track.videoLocation}</span>
+				<span class="track-audio">${track.audioLocation}</span>
+			</li>
+		`
+      )
+      .join("");
+  }
+
+  // Update now playing display
+  function updateNowPlaying(index: number) {
+    const comboEl = document.getElementById("current-combo");
+    const track = playlist[index];
+    if (comboEl && track) {
+      comboEl.textContent = `${track.videoLocation} + ${track.audioLocation}`;
+    }
+
+    // Update tracklist highlighting
+    document.querySelectorAll("#tracklist-items li").forEach((li, i) => {
+      li.classList.toggle("playing", i === index);
+    });
+
+    currentTrack = index;
+  }
+
+  // YouTube IFrame API callback
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player("player", {
+      height: "100%",
+      width: "100%",
+      playerVars: {
+        autoplay: 1,
+        controls: 1,
+        rel: 0,
+        modestbranding: 1,
+        iv_load_policy: 3,  // Hide annotations
+        playsinline: 1,     // Play inline on mobile
+        fs: 1,              // Allow fullscreen
+      },
+      events: {
+        onReady: onPlayerReady,
+        onStateChange: onPlayerStateChange,
+      },
+    });
+  }
+
+  function onPlayerReady(_event: YT.PlayerEvent) {
+    const videoIdList = playlist.map((t) => t.videoId);
+    player.cuePlaylist(videoIdList);
+    player.playVideo();
+    updateNowPlaying(0);
+  }
+
+  function onPlayerStateChange(event: YT.OnStateChangeEvent) {
+    if (event.data === YT.PlayerState.PLAYING) {
+      const index = player.getPlaylistIndex();
+      if (index !== currentTrack) {
+        updateNowPlaying(index);
+      }
+    }
+  }
+
+  // Make callback available globally for YouTube API
+  (window as any).onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+
+  // Load YouTube IFrame API
+  const tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  const firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
+
+  // Initialize UI
+  document.addEventListener("DOMContentLoaded", () => {
+    populateTracklist();
+
+    // Info panel toggle
+    const toggleBtn = document.getElementById("toggle-info");
+    const panelEl = document.getElementById("now-playing-panel");
+
+    toggleBtn?.addEventListener("click", () => {
+      panelEl?.classList.toggle("hidden");
+      toggleBtn.classList.toggle("active");
+    });
+  });
+</script>
