@@ -38,4 +38,4 @@ The audio was prioritised over video quality - reversing typical amateur product
 6. **Radio** - detuned static between stations
 7. **Etherow Weir** - water flowing at the park in Stockport
 
-[Experience the piece →](/elephants-in-the-dark)
+[Experience the piece →](/kim.town-v2/elephants-in-the-dark)

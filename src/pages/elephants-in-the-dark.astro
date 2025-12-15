@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
@@ -54,7 +55,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         a unique experience from 49 possible pairings.
       </p>
       <p class="refresh-hint">Refresh the page for a new random sequence.</p>
-      <a href="/work/2014/elephants-in-the-dark" class="back-link"
+      <a href={`${base}/work/2014/elephants-in-the-dark`} class="back-link"
         >← About this work</a
       >
     </div>
