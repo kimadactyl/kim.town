@@ -25,15 +25,21 @@ To make your own copy, simply print off the rules and cardsheet below. I recomme
 
 ### Rules
 
-<iframe src="/kim.town-v2/downloads/rules.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+<iframe src="/kim.town-v2/downloads/rules.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
 
-[Download Rules PDF](/kim.town-v2/downloads/rules.pdf)
+<a href="/kim.town-v2/downloads/rules.pdf" download style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: #5e3538; color: white; text-decoration: none; border-radius: 6px; font-weight: 500; margin-top: 1rem;">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+  Download Rules (PDF, 123KB)
+</a>
 
 ### Cardsheet
 
-<iframe src="/kim.town-v2/downloads/cardsheet.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+<iframe src="/kim.town-v2/downloads/cardsheet.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
 
-[Download Cardsheet PDF](/kim.town-v2/downloads/cardsheet.pdf)
+<a href="/kim.town-v2/downloads/cardsheet.pdf" download style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: #5e3538; color: white; text-decoration: none; border-radius: 6px; font-weight: 500; margin-top: 1rem;">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+  Download Cardsheet (PDF, 6.6MB)
+</a>
 
 ## Buy a copy?
 
