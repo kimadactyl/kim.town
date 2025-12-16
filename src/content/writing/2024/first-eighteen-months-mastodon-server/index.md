@@ -6,6 +6,7 @@ heroImage: './images/hero.jpg'
 coverImageCredit: 'Photo by Ivan N on Unsplash'
 tags: ['fediverse']
 source: 'kimtown'
+aliases: ['/first-eighteen-months-mastodon-server']
 ---
 
 [This was a good prompt](https://pilote.me/@MrBerard/112659018928514532) for me to have a think about how [GFSC's](https://gfsc.studio/) Mastodon server is going. Context is we are a small community tech studio with about 5 employees doing mostly publicly funded community sector work with a bit of charity client work on the side, with a [sister discord community](http://discord.gfsc.studio). We've been running a server since November 2022. We specifically use the Hometown fork.

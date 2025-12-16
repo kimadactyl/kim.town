@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('writing');
+
+  const paths: { params: { alias: string }; props: { redirectTo: string } }[] = [];
+
+  for (const post of posts) {
+    const aliases = post.data.aliases || [];
+    for (const alias of aliases) {
+      // Remove leading slash for the param
+      const aliasPath = alias.startsWith('/') ? alias.slice(1) : alias;
+      paths.push({
+        params: { alias: aliasPath },
+        props: { redirectTo: `/writing/${post.id}/` }
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { redirectTo } = Astro.props;
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content={`0;url=${redirectTo}`}>
+    <link rel="canonical" href={redirectTo}>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={redirectTo}>{redirectTo}</a>...</p>
+  </body>
+</html>

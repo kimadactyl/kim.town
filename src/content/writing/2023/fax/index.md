@@ -6,6 +6,7 @@ heroImage: './images/hero.jpg'
 coverImageCredit: 'Photo by Ries Bosch on Unsplash'
 tags: ['reflection']
 source: 'kimtown'
+aliases: ['/fax', '/Fax']
 ---
 
 We don’t really see fax machines so much nowadays but they were a really magical and fun invention when I was a kid. Photocopiers have survived way better than fax machines and are very cool too but less so than the fax. I remember early modems (when you had to get this an an additional device for your computer) would have sending faxes as a key listed feature. But outside of hotel foyers and I’m guessing law firms they’re not a thing really any more.

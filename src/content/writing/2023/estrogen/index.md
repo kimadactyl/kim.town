@@ -5,6 +5,7 @@ pubDate: 'Jul 01 2023'
 heroImage: './images/hero.jpg'
 tags: ['trans', 'health', 'personal']
 source: 'kimtown'
+aliases: ['/estrogen', '/Estrogen']
 ---
 
 OK so it feels suuuuper cliche to write a piece on estrogen as a transfemme who recently started HRT but the politics around the representation and technology of it are utterly fascinating to me.

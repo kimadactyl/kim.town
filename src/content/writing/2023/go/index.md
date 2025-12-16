@@ -6,6 +6,7 @@ heroImage: './images/hero.jpg'
 coverImageCredit: 'Photo by Elena Popova on Unsplash'
 tags: ['games', 'personal']
 source: 'kimtown'
+aliases: ['/go', '/Go']
 ---
 
 [Go is my favourite board game](https://senseis.xmp.net/?WhatIsGo). I got really into it in my 20s and was dedicated enough to go pretty regularly to an IRL group in a pub a fairly long bus ride away. Go is often posited as a more ancient Chinese chess-like, but really it’s nothing like it at all to play apart from the obvious (2 players, total knowledge, one move at a time, square board). I’ve played thousands of games in my life now and there is nothing that even feels in the same category to play to me.

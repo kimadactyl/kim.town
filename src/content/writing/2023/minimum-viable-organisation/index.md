@@ -6,6 +6,7 @@ heroImage: './images/hero.jpg'
 coverImageCredit: 'Photo by Samuel Yongbo Kwon on Unsplash'
 tags: ['organizing', 'co-ops', 'personal']
 source: 'kimtown'
+aliases: ['/minimum-viable-organisation']
 ---
 
 **Please note this is a work in progress!**

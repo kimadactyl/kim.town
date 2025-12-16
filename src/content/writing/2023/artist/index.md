@@ -5,6 +5,7 @@ pubDate: 'Dec 15 2023'
 heroImage: './images/hero.jpg'
 tags: ['reflection']
 source: 'kimtown'
+aliases: ['/artist', '/Artist']
 ---
 
 I’ve always had a complicated relationship with art. More specifically, I’ve always had a complicated relationship with knowing if what *I* make is art or not.

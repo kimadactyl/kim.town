@@ -19,6 +19,8 @@ const writing = defineCollection({
 			sourceUrl: z.string().url().optional(),
 			// External URL for posts hosted on other sites
 			externalUrl: z.string().url().optional(),
+			// URL aliases for redirects from old sites
+			aliases: z.array(z.string()).optional(),
 		}),
 });
 

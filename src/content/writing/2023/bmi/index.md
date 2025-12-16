@@ -5,6 +5,7 @@ pubDate: 'Aug 15 2023'
 heroImage: './images/hero.jpg'
 tags: ['health', 'history', 'critique']
 source: 'kimtown'
+aliases: ['/bmi', '/BMI']
 ---
 
 OK, so maybe the last entry [[Artist]] was a little far from a tangible exploration of [[Non-representational technology]]. Let’s try something a bit more direct.

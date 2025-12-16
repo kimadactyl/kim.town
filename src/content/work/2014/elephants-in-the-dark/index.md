@@ -5,7 +5,7 @@ year: 2014
 tags: ["sound", "art", "video", "perception", "listening"]
 source: "personal"
 sourceUrl: "https://alliscalm.net/elephants-in-the-dark/"
-liveUrl: "https://kimadactyl.github.io/kim.town-v2/elephants-in-the-dark"
+liveUrl: "https://kim.town/elephants-in-the-dark"
 heroImage: "./images/hero.jpg"
 role: "Creator"
 ---

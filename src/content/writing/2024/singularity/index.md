@@ -6,6 +6,7 @@ heroImage: './images/hero.jpg'
 coverImageCredit: 'Photo by BoliviaInteligente on Unsplash'
 tags: ['ai', 'critique']
 source: 'kimtown'
+aliases: ['/singularity', '/Singularity']
 ---
 
 "The singularity" is a well-worn concept in sci-fi. [Wikipedia introduces the concept as follows](https://en.wikipedia.org/wiki/Technological_singularity):.

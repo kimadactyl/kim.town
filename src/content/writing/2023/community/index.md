@@ -5,6 +5,7 @@ pubDate: 'Oct 01 2023'
 heroImage: './images/hero.jpg'
 tags: ['community']
 source: 'kimtown'
+aliases: ['/community', '/Community']
 ---
 
 ‘Community’ is a concept at the heart of [a lot of the work I’ve done over my life](https://gfsc.studio/blog/2022/why-is-it-so-hard-to-do-nice-things/). I think for most people most of the things that bring them happiness and allow them to assert their identity are through ideas of community and family.
