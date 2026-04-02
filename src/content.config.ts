@@ -21,6 +21,8 @@ const writing = defineCollection({
 			externalUrl: z.string().url().optional(),
 			// URL aliases for redirects from old sites
 			aliases: z.array(z.string()).optional(),
+			// Whether to show on kim.town (default: true). Set to false for operational/mundane posts.
+			published: z.boolean().default(true).optional(),
 		}),
 });
 

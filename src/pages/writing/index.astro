@@ -4,9 +4,9 @@ import BlogCard from "../../components/BlogCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import WritingFilters from "../../components/WritingFilters.astro";
 
-const posts = (await getCollection("writing")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const posts = (await getCollection("writing"))
+  .filter((post) => post.data.published !== false)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 // Extract unique sources with counts
 const sourceCounts = posts.reduce(

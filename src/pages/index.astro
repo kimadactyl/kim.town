@@ -9,6 +9,7 @@ import { Image } from "astro:assets";
 import kimPortrait from "../assets/kim-portrait.jpeg";
 
 const posts = (await getCollection("writing"))
+  .filter((post) => post.data.published !== false)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 6);
 
