@@ -9,6 +9,8 @@ export const SITE_DESCRIPTION = 'Dr Kim Foale\'s blog'
 // Leave it as an empty string if you are deploying to a root domain (e.g. example.com)
 export const SITE_BASE = ''
 
+export const FEDIVERSE_CREATOR = '@kim@post.lurk.org'
+
 export const SocialLinks = [
 	{
 		name: 'Mastodon',
