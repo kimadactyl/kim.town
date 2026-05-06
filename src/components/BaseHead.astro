@@ -57,6 +57,9 @@ const { title, description, image = `${SITE_BASE}/og.jpg` } = Astro.props
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
+<!-- Fediverse -->
+<meta name="fediverse:creator" content="@kim@post.lurk.org" />
+
 <!-- RSS Auto-discovery -->
 <link
 	rel="alternate"
