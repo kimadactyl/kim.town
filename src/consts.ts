@@ -12,7 +12,7 @@ export const SITE_BASE = ''
 export const SocialLinks = [
 	{
 		name: 'Mastodon',
-		url: 'https://social.coop/@kim',
+		url: 'https://post.lurk.org/@kim',
 	},
 	{
 		name: 'LinkedIn',
