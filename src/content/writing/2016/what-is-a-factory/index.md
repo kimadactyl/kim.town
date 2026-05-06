@@ -34,7 +34,7 @@ From these standardised operating systems come standardised software libraries. 
 
 The industrial, factory nature of the computer follows through to software design itself. Brett Victor, in his classic Magic Ink paper, tells us:
 
-> "Although software is the archetypical non-physical product, modern software interfaces have evolved overtly mechanical metaphors."
+> Although software is the archetypical non-physical product, modern software interfaces have evolved overtly mechanical metaphors. Buttons are pushed, sliders are slid, windows are dragged, icons are dropped, panels extend and retract. People are encouraged to consider software a machine—when a button is pressed, invisible gears grind and whir, and some internal or external state is changed. Manipulation of machines is the domain of industrial design.
 
 It's no real surprise this is the case. We still think of computers as machines, although perhaps of more modern, human devices like tablets and smartphones we do not. Webservices like Facebook are in everything and installed without asking on new phones: and yet Facebook and Twitter too are built using these layers on layers, standardised libraries using standardised computer controls, iterated constantly, each part under intense scrutiny by teams of engineers.
 

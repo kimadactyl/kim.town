@@ -1,6 +1,6 @@
 ---
 title: "Elephants in the Dark"
-description: "A sound art piece exploring how our eyes can fool our ears, and vice versa."
+description: "It's commonly stated that all broadband, or \"white\" noise sources essentially sound the same to the human ear -- in other words, a main road is acoustically very similar to the sea, even though we generally consider one very stressful and the other relaxing."
 year: 2014
 tags: ["sound", "art", "video", "perception", "listening"]
 source: "personal"
@@ -10,31 +10,34 @@ heroImage: "./images/hero.jpg"
 role: "Creator"
 ---
 
-Elephants in the Dark is an experiment to see if our eyes can fool our ears, and vice versa. The piece plays back audio and video recordings of seven locations in random combinations: a kettle, the Mancunian Way motorway, the weir at Etherow Park, Formby beach, radio static, hoovering, and a computer lab at Salford University.
+### An experiment in listening by Dr. Kim Foale (2014)
 
-Each session creates a unique 17-minute experience from 49 possible audio-video combinations (7×7). Refreshing generates new random pairings, inviting viewers to notice how visual context shapes what we hear.
+Play full screen, total duration 17'30". Refresh the browser to generate a new playlist.
 
-## Concept
+**Background**
 
-The title references John Godfrey Saxe's poem about blind men examining an elephant - each perceiving something different based on what part they touch. Similarly, this piece asks: when we see a beach but hear a kettle, what do we actually perceive?
+It's commonly stated that all broadband, or "white" noise sources essentially sound the same to the human ear -- in other words, a main road is acoustically very similar to the sea, even though we generally consider one very stressful and the other relaxing. During my PhD research, I wondered to what extent this is true: and to what degree our eyes can fool our ears, and vice versa.
 
-The work emerged from my PhD research into the sociology of listening, exploring how environmental context shapes auditory experience. By deliberately mismatching familiar sounds and visuals, the piece makes visible (or audible) our usually unconscious process of integrating sensory information.
+This film consists of audio and video recordings of seven locations, played back in random combinations. These are: a kettle; the Mancunian Way; a weir at Etherow Park; Formby beach; a detuned radio; someone hoovering; and a computer lab at Salford University.
 
-## Technical Details
+Each entire playthrough takes 17 minutes 30 seconds. You can refresh the page to get new combinations. Play fullscreen, listen, tune in and out, put it on in the background: how does it change your experience of the audio? Does looking first, or listening first, make a difference? Even if you're sure what it is, can you convince your brain otherwise?
 
-- **Video**: JVC DR-760 camera
-- **Audio**: Tascam HD-P2 recorder with Pearl M&S stereo microphone
-- **Editing**: Sony Vegas (video), Reaper (audio)
-- **Processing**: sox and avconv command-line tools
+Note there is no correct answer to any of these questions: I'd be delighted to hear what you think.
 
-The audio was prioritised over video quality - reversing typical amateur production standards - because the piece is fundamentally about listening.
+**Credits and Thanks**
 
-## The Seven Locations
+Originally produced for and premiered at _Be Live_ at The Penthouse.
 
-1. **Formby Beach** - waves and wind on the Lancashire coast
-2. **Computer Lab** - the hum of machines at Salford University
-3. **Hoovering** - domestic vacuum cleaner sounds
-4. **Kettle** - water boiling
-5. **Mancunian Way** - traffic on Manchester's urban motorway
-6. **Radio** - detuned static between stations
-7. **Etherow Weir** - water flowing at the park in Stockport
+- Dr. Kim Foale: Director, audio and video recording, code
+- Sylvia Kolling: Location spotter, key grip
+- Michael Roberts: Chauffer
+- Josh R: Camera loan
+- Nichola Hallet: Hooverist
+
+**Technical Notes**
+
+Video was shot on a JVC DR-760, and audio recorded on a Tascam HD-P2 with a Pearl M&S stereo mic. I deliberately wanted the audio to be very high quality compared to the video, compared to most amateur video production where the reverse is true.
+
+Videos were edited in Sony Vegas, and audio using Reaper. Audio and video batch processing was done using the sox and avconv command-line tools.
+
+Initially I wanted to simply have seven videos and seven audio files and use JavaScript to combine them in the user's browser, however there is currently no code solution I can find that works reliably across the major operating systems (especially iOS) -- I tried Popcorn.js, the YouTube API, Mediaelement.js, and some custom ideas to no avail. Therefore all 49 possible permutations of audio and video are uploaded to YouTube. Suggestions to improve this more than welcome!

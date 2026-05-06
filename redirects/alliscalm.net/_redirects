@@ -1,0 +1,36 @@
+# alliscalm.net → kim.town
+# Cloudflare Pages _redirects format: <source>  <destination>  <status>
+# All entries are 301 (permanent).
+
+# Writing posts (19)
+/agriculture-soundscape-recordings-from-2007/      https://kim.town/writing/2012/agriculture-soundscape-recordings-from-2007/  301
+/arborjs-experiments/                              https://kim.town/writing/2012/arborjs-experiments/                          301
+/rethinking-sound-and-the-web-part-2/              https://kim.town/writing/2012/rethinking-sound-web-2/                       301
+/sounds-and-the-web-dont-work/                     https://kim.town/writing/2012/sounds-web-dont-work/                         301
+/sound-and-the-web-3/                              https://kim.town/writing/2013/sound-and-the-web-3/                          301
+/acoustic-citizenship-night-day/                   https://kim.town/writing/2014/acoustic-citizenship-night-day/               301
+/art-of-noises/                                    https://kim.town/writing/2014/art-of-noises/                                301
+/dont-trust-i-side-with/                           https://kim.town/writing/2014/dont-trust-i-side-with/                       301
+/england-losing/                                   https://kim.town/writing/2014/england-losing/                               301
+/pass-sing/                                        https://kim.town/writing/2014/pass-sing/                                    301
+/publishing-phd-theses/                            https://kim.town/writing/2014/publishing-phd-theses/                        301
+/selective-imagination/                            https://kim.town/writing/2014/selective-imagination/                        301
+/termite-club-ladyfest-leeds/                      https://kim.town/writing/2014/termite-club-ladyfest-leeds/                  301
+/pax-porfiriana/                                   https://kim.town/writing/2015/pax-porfiriana/                               301
+/stop-making-pincushion-maps/                      https://kim.town/writing/2015/stop-making-pincushion-maps/                  301
+/dear-friend/                                      https://kim.town/writing/2016/dear-friend/                                  301
+/paul-graney-pioneer-acoustic-ecology/             https://kim.town/writing/2016/paul-graney-pioneer-acoustic-ecology/         301
+/what-is-a-factory/                                https://kim.town/writing/2016/what-is-a-factory/                            301
+/victory-points-suck/                              https://kim.town/writing/2017/victory-points-suck/                          301
+
+# Work / portfolio posts (7)
+/kates-cuttings/                                   https://kim.town/work/2012/kates-cuttings/                                  301
+/work-for-change/                                  https://kim.town/work/2012/work-for-change/                                 301
+/embody-move-association/                          https://kim.town/work/2013/embody-move-association/                         301
+/elephants-in-the-dark/                            https://kim.town/work/2014/elephants-in-the-dark/                           301
+/noise-eater/                                      https://kim.town/work/2015/noise-eater/                                     301
+/first-national-festival-of-lgbt-history/          https://kim.town/work/2015/first-national-festival-lgbt-history/            301
+/tai-chi-school/                                   https://kim.town/work/2016/tai-chi-school/                                  301
+
+# Catch-all: any unmapped URL goes to kim.town root
+/*                                                 https://kim.town/                                                           301

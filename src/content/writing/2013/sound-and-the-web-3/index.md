@@ -3,20 +3,20 @@ title: 'Rethinking Sound and the Web: Part 3'
 description: 'How can very large collections of audio data be quickly and easily searched and catalogued?'
 pubDate: 'Sep 23 2013'
 heroImage: './images/labs-map-draft.png'
-tags: ['sound', 'research', 'data']
+tags: ['sound', 'web', 'datavis']
 source: 'alliscalm'
 sourceUrl: 'https://alliscalm.net/sound-and-the-web-3/'
 ---
 
-This idea which I've blogged about previously was worked into a bid for a British Library Labs competition. My submission was unsuccessful but here's where I'm up to for another date. This article is therefore a "how it would be done" proposal.
+_This idea which I've [blogged about](/writing/2012/sounds-web-dont-work/) [previously](/writing/2012/rethinking-sound-web-2/) was worked into a bid for a [British Library Labs competition](http://labs.bl.uk/Competition+2013). My submission was unsuccessful but here's where I'm up to for another date. This article is therefore a "how it would be done" proposal._
 
-I'm also aware I've not updated this in nearly a year! More to come from my backlog, and a possible move to a new domain.
+_I'm also aware I've not updated this in nearly a year! More to come from my backlog, and a possible move to a new domain._
 
-Question: How can very large collections of audio data be quickly and easily searched and catalogued?
+**Question: How can very large collections of audio data be quickly and easily searched and catalogued?**
 
 ## Abstract
 
-Computers, and especially the web, handle audio very badly. Images and video are the de facto web media formats, while browsing large amounts of audio data is still a chore. This project will develop a new shorthand for audio data, and rethink how we visualise and manage audio data in order to bring it up to speed with where images have been for years.
+Computers, and especially the web, handle audio very badly. Images and video are the _de facto_ web media formats, while browsing large amounts of audio data is still a chore. This project will develop a new shorthand for audio data, and rethink how we visualise and manage audio data in order to bring it up to speed with where images have been for years.
 
 Audio files should have beautiful, semantically rich thumbnails that convey information about the sound within, communicating meaningful properties of the sounds, in order to allow quick comparison and evaluation of the salient points of a very large number of files. Some of these properties are:
 
@@ -43,23 +43,23 @@ Being able to ascertain basic properties in this way will hugely speed up intera
 
 Here are some examples of how I would process British Library content, with some very rough examples.
 
-## "Soundscapes" collection
+### "Soundscapes" collection
 
-There is already a map of soundscape recordings, and a separate XML database on the British Library website. However, reading the descriptions of each sound or seeing where they are located on the map gives little useful information about the data set as a whole. A useful visualisation here would be to directly superimpose sound glyphs onto the existing map. I've done a very rough mockup here, with some examples of how I would go about using the space. Click for a bigger view.
+There is already a map of [soundscape recordings](http://sounds.bl.uk/Sound-Maps/Soundscapes), and a separate XML database on the British Library website. However, reading the descriptions of each sound or seeing where they are located on the map gives little useful information about the data set as a whole. A useful visualisation here would be to directly superimpose sound glyphs onto the existing map. I've done a very rough mockup here, with some examples of how I would go about using the space. Click for a bigger view.
 
 ![Draft soundmap](./images/labs-map-draft.png)
 
-Ideally this should be rendered with a Google Maps/OpenStreetMap style pan and scroll interface, as is currently on the British Library website. This could be made into a complete sub-site, with extra controls for filtering based on volume, frequency content, duration, etc, using the metadata information. Straight away this output gives us rich contextual information about the sound environment, in ways that wouldn't necessarily be obvious from listening to sounds one at a time.
+Ideally this should be rendered with a Google Maps/[OpenStreetMap](http://www.openstreetmap.org/) style pan and scroll interface, as is currently on the [British Library website](http://sounds.bl.uk/Sound-Maps/Soundscapes). This could be made into a complete sub-site, with extra controls for filtering based on volume, frequency content, duration, etc, using the metadata information. Straight away this output gives us rich contextual information about the sound environment, in ways that wouldn't necessarily be obvious from listening to sounds one at a time.
 
-## "Accents" collection
+### "Accents" collection
 
-In a similar way, the "accents" collection has a huge amount of files but no practical way of discerning or identifying an accent heard in the real world short of listening to every file. A well designed glyph would show important parts of the audio recording, and may show where vowels or consonants are emphasised more. This application would necessitate a specialised application and analysis; however, likely focusing heavily on the freqency bands for vowels and consonants. Again, superimposed glyphs on the map may show interesting regional or national patterns that would be hard to discover or navigate with a manual listening exercise.
+In a similar way, [the "accents" collection](http://sounds.bl.uk/Sound-Maps/Accents-and-Dialects) has a huge amount of files but no practical way of discerning or identifying an accent heard in the real world short of listening to every file. A well designed glyph would show important parts of the audio recording, and may show where vowels or consonants are emphasised more. This application would necessitate a specialised application and analysis; however, likely focusing heavily on the freqency bands for vowels and consonants. Again, superimposed glyphs on the map may show interesting regional or national patterns that would be hard to discover or navigate with a manual listening exercise.
 
-Similar experiments with manual coding show fascinating results, for example Joshua Katz's "Dialect Survey Maps". Imagine a map like this with sound recordings layered on top!
+Similar experiments with manual coding show fascinating results, for example [Joshua Katz's "Dialect Survey Maps"](http://spark-1590165977.us-west-2.elb.amazonaws.com/jkatz/SurveyMaps/). Imagine a map like this with sound recordings layered on top!
 
 ## Birdsong database
 
-Ascertaining a birdsong in the wild can be very difficult. Some birds are known to imitate others, and the songs can be very similar. This is another example of a specialised application: with birdsong we are only interested in a fairly specific, high pitched section of the frequency range.
+Ascertaining a [birdsong in the wild](http://sounds.bl.uk/Sound-Maps/Wildlife-Recordings) can be very difficult. Some birds are known to imitate others, and the songs can be very similar. This is another example of a specialised application: with birdsong we are only interested in a fairly specific, high pitched section of the frequency range.
 
 An ideal thumbnail here would show the pattern and pitch of each bird, in a much more literal way than the general soundscape recordings. A simple thumbnail list with filters is the best visualisation here -- there is no need for map data. Through listening to a bird in your garden, the thumbnails would allow you to vastly narrow down the number of recordings to compare the birdsong with. With filters for, for instance, geographical region and rarity, a well designed format should point you to relevant files very quickly. Again, to reiterate the project goals -- the thumbnails are an aid to focussed listening, not a replacement for listening.
 
@@ -77,10 +77,10 @@ The basic framework would be:
 4. See if there is an existing server-side program to generate the metadata -- if not, work with a developer to generate one.
 5. Create a proof-of-concept jQuery plugin that implements all this given an input of audio files and their corrosponding metadata.
 
-## Potential public engagement -- Sounding Shapes
+### Potential public engagement -- Sounding Shapes
 
 Members of the public will be shown shapes of different sizes and colours, and asked what they think they sound like. They will be played sounds (on headphones) and asked to draw them. This will be a fun, portable public engagement, on the net and other sites as available.
 
 After collecting the data we can publish the results and see what similarities and differences there are between both the ways people draw sounds, and describe the sounds of drawings. This will hopefully be a fun, viral project that can potentially get some traction with the Sound Art community, local news, and blogs on web and interactivity.
 
-Thanks to Amanda for letting me know about the competition, and everyone who gave feedback on my proposal.
+_Thanks to Amanda for letting me know about the competition, and everyone who gave feedback on my proposal._

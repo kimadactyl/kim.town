@@ -36,11 +36,19 @@ This obfuscation of underlying themes is often at its most extreme in board game
 
 The most cited example of a complete gloss is *Puerto Rico*, and for good reason. This game is the polar opposite to a simulation game: it's very much a Eurogame, perhaps best thought of a mathematical puzzle with a vague theme added on top. From the game's description:
 
-"In Puerto Rico players assume the roles of colonial governors on the island of Puerto Rico. The aim of the game is to amass victory points by shipping goods to Europe or by constructing buildings... The resource cycle of the game is that players grow crops which they exchange for points or doubloons... Buildings and plantations do not work unless they are manned by colonists."
+> In Puerto Rico players assume the roles of colonial governors on the island of Puerto Rico. The aim of the game is to amass victory points by shipping goods to Europe or by constructing buildings.
+>
+> Each player uses a separate small board with spaces for city buildings, plantations, and resources. Shared between the players are three ships, a trading house, and a supply of resources and doubloons.
+>
+> The resource cycle of the game is that players grow crops which they exchange for points or doubloons. Doubloons can then be used to buy buildings, which allow players to produce more crops or give them other abilities. Buildings and plantations do not work unless they are manned by colonists.
 
 That's about the last time that the word "colony" is used. "Colonists" can only be interpreted as slaves, in this game: reduced to coloured blocks of wood. In board game parlance, this is a "worker placement game" -- you assign workers to tasks, which give you things. So somehow "slave" (real life) becomes "colonist" (game manual) becomes "worker" (in common use), a chunk of wood completely void of theme that does exactly what you ask, doesn't upgrade, have any needs, and doesn't answer back.
 
-Bruno Faidutti has written an excellent article on this topic. He states simply: "The problem in *Puerto Rico* is not that there are slave tokens, it is that they are called colonists." I agree with this. I also go further, and suggest that as a pedogogical tool, these games teach that slavery is trivial, and its use as a tradable commodity an inevitable element of the past. I've not played *Saint Petersburg*, but Puerto Rico has no aspect of slave revolt, of the problamatic nature of the central concept: slavery becomes a purely abstract concept for the exploitation of the players.
+Bruno Faidutti has written an excellent article on this topic. He states simply:
+
+> "The problem in _Puerto Rico_ is not that there are slave tokens, it is that they are called colonists. The problem with _Saint Petersburg_ is that one of the worst episodes of forced labour in modern European history is treated as a good spirited competition between hardworking craftsmen."
+
+I agree with this. I also go further, and suggest that as a pedogogical tool, these games teach that slavery is trivial, and its use as a tradable commodity an inevitable element of the past. I've not played *Saint Petersburg*, but Puerto Rico has no aspect of slave revolt, of the problamatic nature of the central concept: slavery becomes a purely abstract concept for the exploitation of the players.
 
 Otherwise excellent review site *Shut Up and Sit Down*, which is partially responsible for my interest in board games and possibly some of the best journalism on the subject, is just as guilty in this respect. In two reviews now, they've chosen to review games with slavery as an abstract or explicit element, and completely glossed over it as a problem other than acknowledging it exists. In rounding up, in neither review was it acknowledged that a reason for not buying them is a completely problematic theme which would be seen as laughably oversimplistic if not racist in any other context.
 
@@ -64,7 +72,7 @@ Finally then, the nominal reason for this article, and the game that triggered t
 
 Designer Phil Eklund is renowned for creating deeply complex and well-research simulations of space travel and evolution, and I think it's fair to say he values accuracy more than ease of teaching, or simplicity. *Pax Porfiriana* caught my eye. From the authors' description:
 
-"Pax Porfiriana is Latin for 'The Porfirian Peace'. It refers to the 33-year reign of dictator Porfirio Díaz, ruling Mexico with an iron hand until toppled by the 1910 Revolution."
+> Pax Porfiriana is Latin for "The Porfirian Peace". It refers to the 33-year reign of dictator Porfirio Díaz, ruling Mexico with an iron hand until toppled by the 1910 Revolution. As a rich businessman (Hacendado) in the turbulent pre-revolutionary borderlands of the U.S. and Mexico, compete to build business empires of ranches, mines, rails, troops, and banks while subverting your opponents with bandidos, Indians, and lawsuits. Win by toppling Díaz, either by coup, succession, revolution, or annexing Mexico to the U.S. If Díaz remains firmly seated at the end of the game, then the player with the most gold is the winner.
 
 On paper at least, this sounds like a cut-and-dried euro worker-placement game that should by all rights have the same issues mentioned above.
 

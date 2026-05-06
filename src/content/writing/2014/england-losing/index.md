@@ -14,7 +14,7 @@ Dwelling on this, I've come to think that the England football team represents a
 
 ![Recycling bins for England merchandise](./images/england-recycling-2.jpg)
 
-- First and foremost, we are _the_ great colonial nation. "There is not a country in is World Cup that we, or one of our other European friends, have not invaded, extorted, or enslaved at some point." We are a nasty country, a racist country, a country that has conveniently forgotten almost its entire wealth is based on slavery and exploitation. Being beaten by those we might have _owned_ not so long ago feels like fantastic karmic retribution.
+- First and foremost, we are _the_ great colonial nation. There is not a country in is World Cup that we, or one of our other European friends, have not invaded, extorted, or enslaved at some point. We are a nasty country, a racist country, a country that has conveniently forgotten almost it's entire wealth is based on slavery and exploitation. Being beaten by those we might have _owned_ not so long ago feels like fantastic karmic retribution.
 
 - Following this, it's even more hilarious when foreign players who play for English teams score against us -- Balotelli and Suárez. We invented the sport, sent it out unto the world, and now our incredibly anti-immigrant country can't win without them. We like migrants when they are convenient to our sporting success -- but then treat them like shit.
 

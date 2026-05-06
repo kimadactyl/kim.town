@@ -1,0 +1,11 @@
+# cassowaryproject.org → kim.town
+# Cloudflare Pages _redirects format: <source>  <destination>  <status>
+# All entries are 301 (permanent).
+
+/living-in-the-ruins/                                                                  https://kim.town/writing/2015/living-in-the-ruins/                       301
+/visualising-qualitative-data-on-maps/                                                 https://kim.town/writing/2015/stop-making-pincushion-maps/               301
+/to-all-whom-these-presents-shall-come-greeting-transcribing-a-royal-charter/          https://kim.town/writing/2015/transcribing-royal-charter/                301
+/understanding-modern-manchester-through-baths-and-wash-houses/                        https://kim.town/writing/2016/understanding-manchester-baths-wash-houses/ 301
+
+# Catch-all: any unmapped URL goes to kim.town root
+/*                                                                                     https://kim.town/                                                          301
