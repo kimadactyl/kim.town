@@ -1,5 +1,5 @@
 ---
-import { SITE_BASE } from '@/consts'
+import { SITE_BASE, FEDIVERSE_CREATOR } from '@/consts'
 import '../styles/global.css'
 
 interface Props {
@@ -56,6 +56,9 @@ const { title, description, image = `${SITE_BASE}/og.jpg` } = Astro.props
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Fediverse -->
+<meta name="fediverse:creator" content={FEDIVERSE_CREATOR} />
 
 <!-- RSS Auto-discovery -->
 <link
