@@ -1,6 +1,6 @@
 ---
-title: 'Art of Noises: risk, live music, play and power'
-description: 'Art Of Noises is an experimental board game centered on avant-garde musical improvisation.'
+title: 'Art Of Noises'
+description: 'Art Of Noises is a game of abstract musical performance for 3-5 people. Players take the role of avant-garde performers, attempting to communicate various nouns, verbs and adjectives using a variety of toy instruments.'
 pubDate: 'Oct 15 2014'
 updatedDate: 'Oct 13 2015'
 tags: ['games', 'music']
@@ -9,45 +9,23 @@ sourceUrl: 'https://alliscalm.net/art-of-noises/'
 heroImage: './images/art-of-noises.jpg'
 ---
 
-*Art Of Noises* represents an experimental board game centered on avant-garde musical improvisation. Players receive five words (such as purple, Communism, Taj Mahal, scared, or snooker) and take turns performing them using toy instruments. The game functions similarly to Pictionary but operates through sound rather than visual representation.
+Art Of Noises is a game of abstract musical performance for 3-5 people. Players take the role of avant-garde performers, attempting to communicate various nouns, verbs and adjectives using a variety of toy instruments. Each player takes it in turn to select a card and perform the word on it. The other players guess which word is being performed. At the end of the game, the person with the most points wins, and is declared the most avant-garde.
 
-The project emerged from PhD research examining listening practices and aims to encourage participants to consider how sounds communicate meaning. It draws inspiration from John Cage's philosophy regarding experimentation and chance, positioning players as performers within their own scratch orchestra.
+![Art of Noises](./images/art-of-noises.jpg)
 
-## Historical Context
+Art Of Noises is based on my research into the sociology of listening, and is an opportunity to explore how we communicate through sounds. It channels John Cage's passion for experimentation, chance, and his open-definition of what music is, and explicitly makes the players performers in their own scratch orchestra. It's also an attempt to question who is a performer, and encourage a return to more aural sensibilities. [I've written a lengthy post about the rationale behind the game, if you want to know more](/why-art-of-noises).
 
-The game's title references Luigi Russolo's foundational text on compositional sound theory. Russolo's work established frameworks for understanding man-made sounds as compositional elements—laying groundwork for both experimental music and musique concrète movements.
+The game is available under a [Creative Commons BY-NC-SA license](http://creativecommons.org/licenses/by-nc-sa/4.0/) - in other words, it's free to use, alter and share if you're not using it commercially.
 
-## The Problem with Modern Performance Culture
+### Downloads
 
-Contemporary performance contexts emphasize "spectacle," where audiences remain passive observers following unwritten social rules. Henri Lefebvre's concept of "Dressage"—social conditioning through repetition—discourages genuine interaction.
+- [Rules \[pdf\]](https://www.scribd.com/doc/284831692/Art-of-Noises-Rules)
+- [Cardsheet \[pdf\]](https://www.scribd.com/doc/284831686/Art-of-Noises-Cardsheet)
 
-The personal catalyst came when accompanying a friend to a noise performance. The friend's conversational attempt felt transgressive despite the experimental music context, revealing internalized attitudes about appropriate performance conduct.
+To make your own copy, simply print off the rules and cardsheet above. I recommend printing the cardsheet on thin card, and the rules double sided if possible!
 
-## Experimental Music Redefined
+### Buy a copy?
 
-True experimental music prioritizes *process* over predetermined sonic outcomes. John Cage exemplified this through scores describing actions rather than sounds—such as his Prepared Piano works. This contrasts with Serialist approaches that specify exact parameters.
+I have a limited run of five copies for sale. Each copy contains 192 cards, and is in a hand-made, embroidered bag. Please email [kim@alliscalm.net](mailto:kim@alliscalm.net) if you're interested.
 
-Contemporary experimental music often prioritizes particular sonic aesthetics over genuine experimentation, abandoning the movement's core investigative spirit.
-
-## Cultural Shift from Aural to Visual
-
-Society has transitioned from cultures emphasizing oral communication and performance participation to visual-dominant consumption models. Historical practices—broadsides, community music-making, amateur dramatics—have diminished significantly.
-
-## Design Solution
-
-*Art Of Noises* addresses these concerns by:
-
-- Breaking performer-audience hierarchies through mandatory participation
-- Creating low-entry creative barriers
-- Establishing shared aural vocabulary among participants
-- Encouraging spontaneous interpretation and collaboration
-
-Players progress from tentative exploration to confident experimentation, discovering novel instrumental techniques and building group cultural references through sound.
-
-## Broader Implications
-
-Sound production represents power—a consideration artists should approach thoughtfully. Reconsidering power dynamics implicit in all noise and sound work could help recover historical aural sensibilities.
-
-Drawing on William Morris's philosophy, functional and beautiful collaborative practices might address contemporary cultural alienation and emotional disconnection through interactive music and play.
-
-The game rules remain available under Creative Commons licensing on GitHub, with physical copies available through performances.
+They are £25 plus postage and packing. Please note you need to supply your own instruments!

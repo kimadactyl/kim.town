@@ -50,11 +50,19 @@ Just like real artists then, you compete for the painting that gains the most po
 
 While this has a Hearts-style "shoot the moon" victory, again we are treated to a really interesting sounding theme with a snooze-worthy victory condition.
 
+One last example for now.
+
+### Waggle Dance
+
+> "Be efficient, be strategic and outmanoeuvre your opponents to make honey for the hive in this game for 2-4 players (ages 10+). In **Waggle Dance**, players control worker bees to build a beehive, collect nectar and fill the hive with honey! **Waggle Dance** is easy to pick-up-and-play and full of depth, making it fast paced and perfect for all levels of gamers."
+
+This is where it gets really silly. Bees competing against each other? In a species renowned for it's cooperation and instinctive systems of order and routine? Right.
+
 ## What do victory points represent, then?
 
 I propose that VPs represent the cultural capital of the player's presumed -- but often absent -- avatar within their own social field. This means that VPs represent the relationship between your game avatar and the other game avatars, not your relationship between your game avatar and the world at large.
 
-In Kana-Gawa what matters is not painting beautiful paintings, or indeed even becoming a rich painter, but gaining the most prestige among artists or collectors. In Dream Home what matters is not having a nice home that you enjoy living in, but having the best house on the block, as decided by the game's creator.
+In Kana-Gawa what matters is not painting beautiful paintings, or indeed even becoming a rich painter, but gaining the most prestige among artists or collectors. In Dream Home what matters is not having a nice home that you enjoy living in, but having the best house on the block, as decided by the game's creator. In Waggle Dance you need to be... the most important beehive?
 
 The more you look at these games the more absurd the mechanic becomes. What they are measuring in my view is the generally intangible concept of cultural capital, a concept developed by French sociologist Pierre Bourdieu.
 
