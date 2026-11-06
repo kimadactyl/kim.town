@@ -56,26 +56,26 @@ const works = (await getCollection("work"))
     </div>
   </main>
 
-  <!-- Recent Work Section -->
-  <section class="app-container pb-16">
-    <h2 class="section-title">Recent Work</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {works.map((work) => <WorkCard work={work} />)}
-    </div>
-    <a class="btn-secondary" href={`${SITE_BASE}/work`}
-      >View All Work
-      <Icon size={20} name="mdi:arrow-right" />
-    </a>
-  </section>
-
   <!-- Recent Writing Section -->
-  <section class="app-container">
+  <section class="app-container pb-16">
     <h2 class="section-title">Recent Writing</h2>
     <div class="posts-grid-container">
       {posts.map((post) => <BlogCard post={post} />)}
     </div>
     <a class="btn-secondary" href={`${SITE_BASE}/writing`}
       >Read All Writing
+      <Icon size={20} name="mdi:arrow-right" />
+    </a>
+  </section>
+
+  <!-- Recent Work Section -->
+  <section class="app-container">
+    <h2 class="section-title">Recent Work</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {works.map((work) => <WorkCard work={work} />)}
+    </div>
+    <a class="btn-secondary" href={`${SITE_BASE}/work`}
+      >View All Work
       <Icon size={20} name="mdi:arrow-right" />
     </a>
   </section>

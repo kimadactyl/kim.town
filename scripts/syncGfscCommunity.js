@@ -39,10 +39,29 @@ function yearFromDate(dateStr) {
   return new Date(dateStr).getFullYear().toString()
 }
 
+function removeSignupCards(html) {
+  // These cards nest divs, so the end has to be found by counting depth.
+  const cardStart = /<div[^>]*\bkg-signup-card[\s"][^>]*>/i
+  let match
+  while ((match = cardStart.exec(html))) {
+    const divs = /<\/?div\b[^>]*>/gi
+    divs.lastIndex = match.index
+    let depth = 0
+    let tag
+    while ((tag = divs.exec(html))) {
+      depth += tag[0].startsWith('</') ? -1 : 1
+      if (depth === 0) break
+    }
+    if (!tag) throw new Error('Unclosed signup card in post HTML')
+    html = html.slice(0, match.index) + html.slice(divs.lastIndex)
+  }
+  return html
+}
+
 function htmlToMarkdown(html) {
   // Basic HTML to markdown conversion
   // Handles the common elements in Ghost output
-  let md = html
+  let md = removeSignupCards(html)
 
   // Remove leading hero image (handled separately via frontmatter)
   md = md.replace(/^<img[^>]*>/, '')
@@ -79,7 +98,7 @@ function htmlToMarkdown(html) {
   })
   md = md.replace(/<ol[^>]*>(.*?)<\/ol>/gis, (_, inner) => {
     let i = 0
-    return inner.replace(/<li[^>]*>(.*?)<\/li>/gis, () => `${++i}. ` + arguments[1] + '\n') + '\n'
+    return inner.replace(/<li[^>]*>(.*?)<\/li>/gis, (_, item) => `${++i}. ${item}\n`) + '\n'
   })
 
   // Blockquotes
@@ -97,8 +116,11 @@ function htmlToMarkdown(html) {
   // Horizontal rules
   md = md.replace(/<hr[^>]*\/?>/gi, '\n---\n\n')
 
+  // Embeds such as podcast players need their own block
+  md = md.replace(/<iframe[\s\S]*?<\/iframe>/gi, (iframe) => `\n\n${iframe}\n\n`)
+
   // Strip remaining tags
-  md = md.replace(/<[^>]+>/g, '')
+  md = md.replace(/<(?!\/?iframe\b)[^>]+>/g, '')
 
   // Decode HTML entities
   md = md.replace(/&amp;/g, '&')

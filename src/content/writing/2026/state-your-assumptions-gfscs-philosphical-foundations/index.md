@@ -170,20 +170,3 @@ Let’s return to our expansive definition of technology: “the systematic trea
 Our last piece on CTPs was about a year ago. We will update the blog soon with more updates on our progress putting this all into practice. What processes do you want to make harder, or easier? Let us know in the comments.
 
 See: [How to Establish a Community Technology Partnership](https://gfsc.community/how-to-establish-a-community-technology-partnership/), [CTP Year 1 Report](https://gfsc.studio/blog/2024/community-tech-partnerships-year-1-report/), [Tech Culture is Failing Communities](https://gfsc.studio/blog/2017/tech-culture-failing-communities/), [White & Foale 2020](https://www.tandfonline.com/doi/full/10.1080/1369118X.2020.1767173).
-
-## Get updates in your inbox
-
-Follow our journey towards a billionaire-free world
-
-Subscribe
-
-.nc-loop-dots-4-24-icon-o{--animation-duration:0.8s}
-.nc-loop-dots-4-24-icon-o *{opacity:.4;transform:scale(.75);animation:nc-loop-dots-4-anim var(--animation-duration) infinite}
-.nc-loop-dots-4-24-icon-o :nth-child(1){transform-origin:4px 12px;animation-delay:-.3s;animation-delay:calc(var(--animation-duration)/-2.666)}
-.nc-loop-dots-4-24-icon-o :nth-child(2){transform-origin:12px 12px;animation-delay:-.15s;animation-delay:calc(var(--animation-duration)/-5.333)}
-.nc-loop-dots-4-24-icon-o :nth-child(3){transform-origin:20px 12px}
-@keyframes nc-loop-dots-4-anim{0%,100%{opacity:.4;transform:scale(.75)}50%{opacity:1;transform:scale(1)}}
-
-Email sent! Check your inbox to complete your signup.
-
-No spam. Unsubscribe anytime.
