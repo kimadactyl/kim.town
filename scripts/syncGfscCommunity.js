@@ -98,7 +98,7 @@ function htmlToMarkdown(html) {
   })
   md = md.replace(/<ol[^>]*>(.*?)<\/ol>/gis, (_, inner) => {
     let i = 0
-    return inner.replace(/<li[^>]*>(.*?)<\/li>/gis, () => `${++i}. ` + arguments[1] + '\n') + '\n'
+    return inner.replace(/<li[^>]*>(.*?)<\/li>/gis, (_, item) => `${++i}. ${item}\n`) + '\n'
   })
 
   // Blockquotes
