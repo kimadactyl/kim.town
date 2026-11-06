@@ -75,20 +75,3 @@ These are also available to [see on our PlaceCal listing.](https://manchester.pl
 ## See you soon?
 
 Feel free to come along to any of these and let us know how we can make them useful and fun for you. Join us on the GFSC [Discord](http://discord.gfsc.studio/) or sign up to our newsletter to get future announcements as we go. And of course, we know times are lean but if you’re able to [support us financially or otherwise](https://gfsc.community/support-us/) to make these meetups sustainable please do.
-
-## Get meetup announcements in your inbox
-
-Sign up to our newsletter to be notified of new events
-
-Subscribe
-
-.nc-loop-dots-4-24-icon-o{--animation-duration:0.8s}
-.nc-loop-dots-4-24-icon-o *{opacity:.4;transform:scale(.75);animation:nc-loop-dots-4-anim var(--animation-duration) infinite}
-.nc-loop-dots-4-24-icon-o :nth-child(1){transform-origin:4px 12px;animation-delay:-.3s;animation-delay:calc(var(--animation-duration)/-2.666)}
-.nc-loop-dots-4-24-icon-o :nth-child(2){transform-origin:12px 12px;animation-delay:-.15s;animation-delay:calc(var(--animation-duration)/-5.333)}
-.nc-loop-dots-4-24-icon-o :nth-child(3){transform-origin:20px 12px}
-@keyframes nc-loop-dots-4-anim{0%,100%{opacity:.4;transform:scale(.75)}50%{opacity:1;transform:scale(1)}}
-
-Email sent! Check your inbox to complete your signup.
-
-No spam. Unsubscribe anytime.
