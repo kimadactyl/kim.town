@@ -20,6 +20,10 @@ This is an Astro blog consolidating two previous sites: **alliscalm.net** (Ghost
 
 **Site URL:** https://alliscalm.net
 
+## Notes Source
+
+Obsidian vault at `~/Library/CloudStorage/Dropbox/Writing/`
+
 ## Commands
 
 ```bash

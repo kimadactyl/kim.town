@@ -12,6 +12,7 @@
  */
 
 import { parseStringPromise } from 'xml2js'
+import fetch from 'node-fetch'
 import fs from 'fs/promises'
 import path from 'path'
 import { fileURLToPath } from 'url'
